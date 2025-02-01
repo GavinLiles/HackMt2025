@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://p0s0a7m15mbn"
+path="res://.godot/imported/Lets get out of here 1.wav-029fc671e59a1bdb45601a5966a41597.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Lets get out of here 1.wav"
+dest_files=["res://.godot/imported/Lets get out of here 1.wav-029fc671e59a1bdb45601a5966a41597.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

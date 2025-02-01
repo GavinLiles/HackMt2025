@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://5ehchfwqj4rt"
+path="res://.godot/imported/Get to the Vehicle 1.wav-9e421f64311ad37586eefb888b6af0fe.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/Get to the Vehicle 1.wav"
+dest_files=["res://.godot/imported/Get to the Vehicle 1.wav-9e421f64311ad37586eefb888b6af0fe.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cyhavfoct1dob"
+path="res://.godot/imported/Follow Me 3.wav-28cd4a03ff88ec7ce4f546cfec9e952f.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/Follow Me 3.wav"
+dest_files=["res://.godot/imported/Follow Me 3.wav-28cd4a03ff88ec7ce4f546cfec9e952f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

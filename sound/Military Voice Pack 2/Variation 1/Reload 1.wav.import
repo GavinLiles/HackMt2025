@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c66enp31h7f0w"
+path="res://.godot/imported/Reload 1.wav-d24a79e766405775ba62b63df0ec0c81.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/Reload 1.wav"
+dest_files=["res://.godot/imported/Reload 1.wav-d24a79e766405775ba62b63df0ec0c81.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

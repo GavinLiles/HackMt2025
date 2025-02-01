@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cylbm7a2c4hg3"
+path="res://.godot/imported/Go Straight In.wav-bb9fec38bb4d30a7c08db154f5b39be8.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 3/Go Straight In.wav"
+dest_files=["res://.godot/imported/Go Straight In.wav-bb9fec38bb4d30a7c08db154f5b39be8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

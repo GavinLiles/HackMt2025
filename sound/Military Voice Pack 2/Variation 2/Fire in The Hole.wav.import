@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c6awnf3o7nkjh"
+path="res://.godot/imported/Fire in The Hole.wav-5b6fb73dfdf73eb6efd404998e0c0c0a.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Fire in The Hole.wav"
+dest_files=["res://.godot/imported/Fire in The Hole.wav-5b6fb73dfdf73eb6efd404998e0c0c0a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

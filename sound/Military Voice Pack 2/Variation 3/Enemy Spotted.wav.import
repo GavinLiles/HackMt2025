@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://81u1ag7wj51k"
+path="res://.godot/imported/Enemy Spotted.wav-3aaa6e06f7d0e2107149f1728e12606b.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 3/Enemy Spotted.wav"
+dest_files=["res://.godot/imported/Enemy Spotted.wav-3aaa6e06f7d0e2107149f1728e12606b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

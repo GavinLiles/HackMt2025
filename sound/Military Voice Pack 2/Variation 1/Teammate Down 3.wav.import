@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bwfxm24u62klc"
+path="res://.godot/imported/Teammate Down 3.wav-79f0498c174c84e93f0ed60e2b17ecff.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/Teammate Down 3.wav"
+dest_files=["res://.godot/imported/Teammate Down 3.wav-79f0498c174c84e93f0ed60e2b17ecff.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
