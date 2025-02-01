@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqp4m5lylbldl"]
+
+[ext_resource type="Texture2D" uid="uid://ctyvaq4jljlbk" path="res://icon.svg" id="1_r4bta"]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(2.97837, -221.053)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3.61244, -0.0283274)
+texture = ExtResource("1_r4bta")

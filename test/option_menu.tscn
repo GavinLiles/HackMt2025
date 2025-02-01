@@ -1,0 +1,281 @@
+[gd_scene load_steps=5 format=3 uid="uid://6ajmu4fs3csl"]
+
+[ext_resource type="Script" path="res://general_button.gd" id="1_8wdh3"]
+[ext_resource type="Script" path="res://audioSlider.gd" id="2_w3tju"]
+[ext_resource type="Script" path="res://keyBind1.gd" id="3_cf7i6"]
+
+[sub_resource type="SystemFont" id="SystemFont_3dbwp"]
+subpixel_positioning = 0
+
+[node name="Option_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = -35
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_3dbwp")
+theme_override_font_sizes/font_size = 32
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 32
+text = "Back"
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = 100.0
+offset_right = -100.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.995954, 0.938668)
+theme_override_font_sizes/font_size = 32
+current_tab = 1
+
+[node name="General" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+metadata/_tab_index = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/General"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.995535, 1)
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/General/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/General/MarginContainer/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 160
+
+[node name="Label" type="Label" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(264, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Window Options"
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+selected = 0
+script = ExtResource("1_8wdh3")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 42
+script = ExtResource("2_w3tju")
+
+[node name="Label" type="Label" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(264, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Volume"
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="HSlider" type="HSlider" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(200, 64)
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+
+[node name="VSeparator2" type="VSeparator" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="TabContainer/General/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(264, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "99.2"
+
+[node name="Keyboard Binds" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Keyboard Binds"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.995535, 1)
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Keyboard Binds/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+script = ExtResource("3_cf7i6")
+
+[node name="Label" type="Label" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Action"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 200
+
+[node name="Button" type="Button" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+toggle_mode = true
+text = "N/A"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+script = ExtResource("3_cf7i6")
+action_name = "move_up"
+
+[node name="Label" type="Label" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Action"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 200
+
+[node name="Button" type="Button" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+toggle_mode = true
+text = "N/A"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+script = ExtResource("3_cf7i6")
+action_name = "move_right"
+
+[node name="Label" type="Label" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Action"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 200
+
+[node name="Button" type="Button" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+toggle_mode = true
+text = "N/A"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+script = ExtResource("3_cf7i6")
+action_name = "move_down"
+
+[node name="Label" type="Label" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Action"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 200
+
+[node name="Button" type="Button" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+toggle_mode = true
+text = "N/A"
+
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -13.206
+autoplay = true
+
+[connection signal="toggled" from="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer/Button" to="TabContainer/Keyboard Binds/MarginContainer/ScrollContainer/VBoxContainer/HBoxContainer" method="_on_button_toggled"]
