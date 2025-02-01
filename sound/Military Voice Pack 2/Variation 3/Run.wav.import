@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://wjv62qlejssh"
+path="res://.godot/imported/Run.wav-3eecc4dc824c863ecf6d66c55eb18c61.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 3/Run.wav"
+dest_files=["res://.godot/imported/Run.wav-3eecc4dc824c863ecf6d66c55eb18c61.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

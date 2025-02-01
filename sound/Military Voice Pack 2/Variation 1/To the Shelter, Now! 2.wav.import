@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dcv484c2ykrmb"
+path="res://.godot/imported/To the Shelter, Now! 2.wav-1d9134f3f62a1046ee9c69149806d3e0.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/To the Shelter, Now! 2.wav"
+dest_files=["res://.godot/imported/To the Shelter, Now! 2.wav-1d9134f3f62a1046ee9c69149806d3e0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

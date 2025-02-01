@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dgrnk44w5ri1n"
+path="res://.godot/imported/Don't Panic 1.wav-f0182c7488f317b7850036818e0ea710.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Don't Panic 1.wav"
+dest_files=["res://.godot/imported/Don't Panic 1.wav-f0182c7488f317b7850036818e0ea710.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

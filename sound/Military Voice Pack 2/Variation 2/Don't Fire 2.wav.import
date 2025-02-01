@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b3q81c8nsnk0x"
+path="res://.godot/imported/Don't Fire 2.wav-091cd487b66d0f75eaf7343d9487be93.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Don't Fire 2.wav"
+dest_files=["res://.godot/imported/Don't Fire 2.wav-091cd487b66d0f75eaf7343d9487be93.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

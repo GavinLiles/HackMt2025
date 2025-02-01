@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://kkgktoegwlt2"
+path="res://.godot/imported/Medic Here 3.wav-807cc0c41a963e2f3bf252db57e062e3.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Medic Here 3.wav"
+dest_files=["res://.godot/imported/Medic Here 3.wav-807cc0c41a963e2f3bf252db57e062e3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

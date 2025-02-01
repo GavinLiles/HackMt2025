@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bmonalvgy1taq"
+path="res://.godot/imported/Stay Alert 2.wav-b400f7fc6e0465cbff5e09b9a6a45c55.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/Stay Alert 2.wav"
+dest_files=["res://.godot/imported/Stay Alert 2.wav-b400f7fc6e0465cbff5e09b9a6a45c55.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

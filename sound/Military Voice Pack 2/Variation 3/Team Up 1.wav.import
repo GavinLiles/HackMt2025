@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cppyq2f03yec2"
+path="res://.godot/imported/Team Up 1.wav-4be4850abfa3ffe4f1db03e45acc1853.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 3/Team Up 1.wav"
+dest_files=["res://.godot/imported/Team Up 1.wav-4be4850abfa3ffe4f1db03e45acc1853.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

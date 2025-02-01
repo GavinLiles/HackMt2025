@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c887v66uqnc73"
+path="res://.godot/imported/Retreat 1.wav-6c59bf7acfbc4625d0005cab5b8d601c.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Retreat 1.wav"
+dest_files=["res://.godot/imported/Retreat 1.wav-6c59bf7acfbc4625d0005cab5b8d601c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

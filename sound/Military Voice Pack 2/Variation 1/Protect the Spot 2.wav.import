@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://db8u3o7mbon0w"
+path="res://.godot/imported/Protect the Spot 2.wav-c8e5e492aa046e48ca3823f668de78f3.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/Protect the Spot 2.wav"
+dest_files=["res://.godot/imported/Protect the Spot 2.wav-c8e5e492aa046e48ca3823f668de78f3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

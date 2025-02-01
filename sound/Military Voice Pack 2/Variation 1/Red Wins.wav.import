@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bhvy033eil6om"
+path="res://.godot/imported/Red Wins.wav-cfe73666234f6de9dbe3d64f5aa17f9d.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/Red Wins.wav"
+dest_files=["res://.godot/imported/Red Wins.wav-cfe73666234f6de9dbe3d64f5aa17f9d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

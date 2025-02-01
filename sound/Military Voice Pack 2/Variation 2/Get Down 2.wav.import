@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b6eg2nbh86t54"
+path="res://.godot/imported/Get Down 2.wav-4d8e658fdb3051b42e1a77ac2c1006af.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Get Down 2.wav"
+dest_files=["res://.godot/imported/Get Down 2.wav-4d8e658fdb3051b42e1a77ac2c1006af.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

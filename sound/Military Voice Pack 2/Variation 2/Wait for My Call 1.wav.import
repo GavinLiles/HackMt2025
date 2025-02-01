@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cvcc2elh7r00g"
+path="res://.godot/imported/Wait for My Call 1.wav-06a52d18de7b83438a28c52a3ecf60da.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Wait for My Call 1.wav"
+dest_files=["res://.godot/imported/Wait for My Call 1.wav-06a52d18de7b83438a28c52a3ecf60da.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

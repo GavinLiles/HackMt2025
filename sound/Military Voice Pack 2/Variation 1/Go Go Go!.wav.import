@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cohuwfdgmxvdg"
+path="res://.godot/imported/Go Go Go!.wav-b9a4fad7227e04d2f000ab28e736217d.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/Go Go Go!.wav"
+dest_files=["res://.godot/imported/Go Go Go!.wav-b9a4fad7227e04d2f000ab28e736217d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

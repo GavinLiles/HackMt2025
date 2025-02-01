@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b6obc726scd1s"
+path="res://.godot/imported/I'm in Position.wav-57f28b49a2b5b24b88b1e20b98923595.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/I'm in Position.wav"
+dest_files=["res://.godot/imported/I'm in Position.wav-57f28b49a2b5b24b88b1e20b98923595.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

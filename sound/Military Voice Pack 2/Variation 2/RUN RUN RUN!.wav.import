@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://csnr42qiatvkw"
+path="res://.godot/imported/RUN RUN RUN!.wav-e1f00c3af6a23c3c64c8a0db5b56c1eb.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/RUN RUN RUN!.wav"
+dest_files=["res://.godot/imported/RUN RUN RUN!.wav-e1f00c3af6a23c3c64c8a0db5b56c1eb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
