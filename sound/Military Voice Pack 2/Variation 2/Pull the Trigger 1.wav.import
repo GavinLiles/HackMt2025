@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bnk7jsb4qe7x0"
+path="res://.godot/imported/Pull the Trigger 1.wav-63fd6fc269e57f0820422871e6322611.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Pull the Trigger 1.wav"
+dest_files=["res://.godot/imported/Pull the Trigger 1.wav-63fd6fc269e57f0820422871e6322611.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

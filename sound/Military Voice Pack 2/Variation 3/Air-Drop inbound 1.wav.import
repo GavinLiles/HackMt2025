@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bcdnexhvke2pr"
+path="res://.godot/imported/Air-Drop inbound 1.wav-095a0cd9921b49aacbbaf28aa0047711.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 3/Air-Drop inbound 1.wav"
+dest_files=["res://.godot/imported/Air-Drop inbound 1.wav-095a0cd9921b49aacbbaf28aa0047711.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

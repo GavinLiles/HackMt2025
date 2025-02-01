@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2wcoavgrrst4"
+path="res://.godot/imported/Cover me 2.wav-d2572ba3d780a6b9c0bd9f2d315fd04a.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/Cover me 2.wav"
+dest_files=["res://.godot/imported/Cover me 2.wav-d2572ba3d780a6b9c0bd9f2d315fd04a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

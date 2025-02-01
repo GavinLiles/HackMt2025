@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dyihnma5ldgq6"
+path="res://.godot/imported/I'm Hit! 2.wav-35ae5173e7e027dcf0920f8dd3a6fd7d.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/I'm Hit! 2.wav"
+dest_files=["res://.godot/imported/I'm Hit! 2.wav-35ae5173e7e027dcf0920f8dd3a6fd7d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

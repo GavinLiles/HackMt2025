@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://udcnr0w3memu"
+path="res://.godot/imported/Report in Team, Report in.wav-392c1ac51a57011bfb8f735faf2d70d0.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 3/Report in Team, Report in.wav"
+dest_files=["res://.godot/imported/Report in Team, Report in.wav-392c1ac51a57011bfb8f735faf2d70d0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

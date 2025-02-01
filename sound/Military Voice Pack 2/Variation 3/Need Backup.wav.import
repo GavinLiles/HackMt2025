@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://k0g2drao8ume"
+path="res://.godot/imported/Need Backup.wav-de0929dca2f147e69482dfce0bde20bb.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 3/Need Backup.wav"
+dest_files=["res://.godot/imported/Need Backup.wav-de0929dca2f147e69482dfce0bde20bb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

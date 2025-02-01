@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b6l4q542d0h1d"
+path="res://.godot/imported/Search Weapons.wav-09f470d046f798f9d2d0a2af6d576510.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 3/Search Weapons.wav"
+dest_files=["res://.godot/imported/Search Weapons.wav-09f470d046f798f9d2d0a2af6d576510.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

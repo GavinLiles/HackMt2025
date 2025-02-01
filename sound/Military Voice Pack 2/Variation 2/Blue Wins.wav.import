@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dfsw1tky0y7te"
+path="res://.godot/imported/Blue Wins.wav-2a12dd15ba66154450bd82a50b0b8d0a.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 2/Blue Wins.wav"
+dest_files=["res://.godot/imported/Blue Wins.wav-2a12dd15ba66154450bd82a50b0b8d0a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

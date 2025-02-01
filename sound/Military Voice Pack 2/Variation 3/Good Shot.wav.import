@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b7nc8urpnas1q"
+path="res://.godot/imported/Good Shot.wav-34574506ed57784a5017bc5d4e3d39ba.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 3/Good Shot.wav"
+dest_files=["res://.godot/imported/Good Shot.wav-34574506ed57784a5017bc5d4e3d39ba.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cmspfabb66omj"
+path="res://.godot/imported/I'll Cover Ya 2.wav-09c0d9462a8145d821a1b829f8ceb6be.sample"
+
+[deps]
+
+source_file="res://sound/Military Voice Pack 2/Variation 1/I'll Cover Ya 2.wav"
+dest_files=["res://.godot/imported/I'll Cover Ya 2.wav-09c0d9462a8145d821a1b829f8ceb6be.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

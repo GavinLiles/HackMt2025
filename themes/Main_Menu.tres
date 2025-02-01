@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bbghb1adgn6ar"]
+
+[ext_resource type="FontFile" uid="uid://dfiv8t66ji8xl" path="res://ART/HVD_Peace.ttf" id="1_lmnpm"]
+
+[resource]
+default_font = ExtResource("1_lmnpm")
