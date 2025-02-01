@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxvjl8gbgqa6j"]
+
+[ext_resource type="Script" path="res://Scrolling_Credits.gd" id="1_3rf4l"]
+[ext_resource type="Texture2D" uid="uid://cfhud4bc7koxg" path="res://ART/laptop-png-6759.png" id="2_xgbl7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0014235, 0.00731817, 0.00577872, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -419.0
+offset_top = -273.0
+offset_right = 421.0
+offset_bottom = 257.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0.559168, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+tab_size = 10
+script = ExtResource("1_3rf4l")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xgbl7")
+expand_mode = 1
