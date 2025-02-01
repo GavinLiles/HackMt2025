@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://byvg731xmpje"]
+
+[ext_resource type="AudioStream" uid="uid://hkocgjnam61q" path="res://Sound/Briefing Room.wav" id="1_qalen"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_qalen")
+autoplay = true
