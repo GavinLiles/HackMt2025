@@ -18,6 +18,15 @@ class room:
 	var timer: int = 0
 	var op_count = 0
 	var t_count = 0
+	var entity_ratio = 0
+	
+	func calcEnemyRatio():
+		if (t_count + op_count) == 0:
+			pass
+				
+			print("enemy ratio:" + op_count / float(t_count + op_count))
+			entity_ratio = op_count / float(t_count + op_count)
+	
 	
 @onready var rooms = [room, room, room, room, room, room]
 
@@ -25,19 +34,20 @@ class room:
 func calcDistanceScore (distanceFromTarget, desiredFiringRange):
 	var distanceDelta = distanceFromTarget - desiredFiringRange
 	var distanceScore = 1-(2 * abs(distanceDelta)**2)/(1 + (abs(distanceDelta)))
+	print("distance score:" + distanceScore)
 	return distanceScore
 
 func calcHealthRatio (currentHealth, maxHealth):
 	var healthRatio = currentHealth/maxHealth
+	print("health ratio:" + healthRatio)
 	return healthRatio
 
 func calcAmmoRatio (currentAmmo, maxAmmo):
 	var ammoRatio = currentAmmo/maxAmmo
+	print("ammo ratio:" + ammoRatio)
 	return ammoRatio
 	
-func calcEnemyRatio(operators_in_room, total_entities_in_room):
-	return operators_in_room/total_entities_in_room
-	
+
 var line_of_sight = false
 var dist_from_target = 5
 
@@ -62,4 +72,5 @@ func _process(delta):
 	distance_score = calcDistanceScore(dist_from_target, desired_firing_range)
 	health_ratio = calcHealthRatio(curr_health, max_health)
 	ammo_ratio = calcAmmoRatio(curr_ammo, max_ammo)
-	#enemy_ratio = calcEnemyRatio(ops_in_room, total_in_room)
+	for i in range (6):
+		rooms[i].calcEnemyRatios()
