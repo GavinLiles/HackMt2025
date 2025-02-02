@@ -1,7 +1,9 @@
 extends Area2D
 
+
 var friendly_count = 0
 var enemy_count = 0
+
 Global.GARAGE
 Global.room_timers[GARAGE]
 var timing = false

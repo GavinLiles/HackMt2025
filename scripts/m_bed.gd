@@ -2,6 +2,7 @@ extends Area2D
 
 var friendly_count = 0
 var enemy_count = 0
+
 Global.MASTER_BEDROOM
 Global.room_timers[MASTER_BEDROOM]
 var timing = false
