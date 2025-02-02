@@ -29,11 +29,13 @@ func calcAmmoRatio (currentAmmo, maxAmmo):
 	
 
 var line_of_sight = false
-var dist_from_target = 0
+var dist_from_target = 5
 
-var distance_score: float = 0
-var health_ratio: float = 0
-var ammo_ratio: float = 0
+var distance_score: float = 1
+var health_ratio: float = 1
+var ammo_ratio: float = 1
+var enemy_ratio: float = 1 # IMPLEMENT THE FUNCTION FOR THIS
+var sound_volume: float = 1 #INMPLEMENT THE FUNCTION FOR THIS
 
 var curr_health = 100
 var max_health = 100
