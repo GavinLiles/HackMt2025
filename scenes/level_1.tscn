@@ -33,7 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://d0swh1mjet41c" path="res://scenes/light_door_cc.tscn" id="18_c2108"]
 [ext_resource type="Texture2D" uid="uid://bvb4us2w5g7g3" path="res://Assets/BasicFurniture_0000s_0000s_0004_Interior-wall-corner-bottom-left.png" id="18_x4vfv"]
 [ext_resource type="Texture2D" uid="uid://bi18aqqmx1t1n" path="res://Assets/Drawing-1.sketchpad.jpg" id="19_yn8rj"]
-[ext_resource type="Texture2D" uid="uid://c8kbtydn7xyjd" path="res://assets/BasicFurniture_0000s_0000s_0004_Interior-wall-corner.png" id="20_si34x"]
+[ext_resource type="Texture2D" uid="uid://c8kbtydn7xyjd" path="res://Assets/BasicFurniture_0000s_0000s_0004_Interior-wall-corner.png" id="20_si34x"]
 [ext_resource type="Texture2D" uid="uid://dyi2bvan5gijv" path="res://Assets/BasicFurniture_0000s_0000s_0004_Interior-wall-corner-top-left.png" id="21_8lhv1"]
 [ext_resource type="Texture2D" uid="uid://bpelgjdikn8kl" path="res://Assets/BasicFurniture_0000s_0000s_0004_Interior-wall-corner-bottom-right.png" id="22_b7ij2"]
 [ext_resource type="Texture2D" uid="uid://dkot5neis3wmp" path="res://Assets/Drawing-1.sketchpad-turned.jpg" id="23_5fa6g"]
