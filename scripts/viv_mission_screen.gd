@@ -23,4 +23,8 @@ func _on_button_pressed() -> void:
 	notes_label.show()
 
 func _on_main_menu_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Main_Menu.tscn")
+	get_tree().change_scene_to_file("res://scene/Main_Menu.tscn")
+
+
+func _on_mission_select_pressed() -> void:
+	get_tree().change_scene_to_file("res://scene/Character_Selection_Powers.tscn")
