@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc4hs0pcohdra"
-path="res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"
+uid="uid://cdwkjict7bk0h"
+path="res://.godot/imported/survivor-idle_shotgun_0.png-db5731ab8a32d2b030ee76435937bddc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/BasicFurniture_0000s_0000s_0001_Interior-wall.png"
-dest_files=["res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"]
+source_file="res://Assets/survivor-idle_shotgun_0.png"
+dest_files=["res://.godot/imported/survivor-idle_shotgun_0.png-db5731ab8a32d2b030ee76435937bddc.ctex"]
 
 [params]
 

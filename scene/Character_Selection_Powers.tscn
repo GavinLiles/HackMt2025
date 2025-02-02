@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://coq7piffjmcu4"]
+[gd_scene load_steps=7 format=3 uid="uid://coq7piffjmcu4"]
 
 [ext_resource type="Script" path="res://Scripts/operatorSelection_box_container.gd" id="1_fedwp"]
 [ext_resource type="Texture2D" uid="uid://c4ji480o3tgd2" path="res://Assets/Backgrounds/Brickwall.jpg" id="1_o0b0w"]
 [ext_resource type="Texture2D" uid="uid://dmf6pri4ad0ga" path="res://Assets/Backgrounds/BigCork.png" id="2_erhpi"]
 [ext_resource type="Texture2D" uid="uid://cetysdk6y8dgp" path="res://Assets/Weapons/assaultRifle.png" id="2_v1xe1"]
+[ext_resource type="Script" path="res://scene/back.gd" id="3_itqad"]
 [ext_resource type="Texture2D" uid="uid://cu8d8s6dxql6o" path="res://Assets/Backgrounds/scroll.png" id="3_r1phd"]
 
 [node name="Character_Selection" type="Control"]
@@ -68,6 +69,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 51
 text = "Back"
 expand_icon = true
+script = ExtResource("3_itqad")
 
 [node name="Op_VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
@@ -797,7 +799,9 @@ alignment = 2
 icon_alignment = 1
 expand_icon = true
 
+[connection signal="pressed" from="HBoxContainer/Back" to="HBoxContainer/Back" method="_on_pressed"]
 [connection signal="item_selected" from="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Control/Op_OptionButton" to="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer" method="_on_op_option_button_item_selected"]
 [connection signal="item_selected" from="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Control/Op_OptionButton" to="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer" method="_on_op_option_button_item_selected"]
 [connection signal="item_selected" from="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Control/Op_OptionButton" to="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer" method="_on_op_option_button_item_selected"]
 [connection signal="item_selected" from="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Control/Op_OptionButton" to="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer" method="_on_op_option_button_item_selected"]
+[connection signal="pressed" from="HBoxContainer/Next" to="HBoxContainer/Back" method="_on_next_pressed"]

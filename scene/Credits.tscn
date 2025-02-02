@@ -1,0 +1,152 @@
+[gd_scene load_steps=8 format=3 uid="uid://cxvjl8gbgqa6j"]
+
+[ext_resource type="AudioStream" uid="uid://mcaydt23pg6u" path="res://sound/risk-136788.mp3" id="1_rrp1g"]
+[ext_resource type="Texture2D" uid="uid://h8smh3v17tdn" path="res://art/Urban-landscape-files/408813142-9b709d72-b166-4bf4-90ca-a27074f6e1de.jpeg" id="2_2i7l4"]
+[ext_resource type="FontFile" uid="uid://bhh2ec6y2eqdj" path="res://art/Get Now.ttf" id="3_aiglh"]
+[ext_resource type="Script" path="res://scripts/Cred_To_Main.gd" id="4_fqyrr"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6d60s"]
+modulate_color = Color(0.524796, 0.524393, 7.70092e-07, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sird1"]
+modulate_color = Color(1, 1, 0.152941, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_irr2h"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_rrp1g")
+autoplay = true
+
+[node name="Cred_Back" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_right = 14.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2i7l4")
+expand_mode = 1
+
+[node name="Cred" type="Label" parent="."]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 152.0
+offset_right = 1008.0
+offset_bottom = 235.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_aiglh")
+theme_override_font_sizes/font_size = 30
+text = "Game Lead: Gavin Liles
+Assistant Lead: Bijay Khanal
+"
+horizontal_alignment = 1
+
+[node name="AI_CRED" type="Label" parent="."]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 327.0
+offset_right = 478.0
+offset_bottom = 604.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_aiglh")
+theme_override_font_sizes/font_size = 15
+text = "AI Team Lead:
+John Wesley Thompson
+Team:
+Colin Onevathana
+Kosy Okafor
+Donald Thirakul
+Peter Mikhaeil
+Kenji Matsumura
+
+"
+
+[node name="MOVE_CRED" type="Label" parent="."]
+layout_mode = 0
+offset_left = 713.0
+offset_top = 257.0
+offset_right = 959.0
+offset_bottom = 380.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_aiglh")
+theme_override_font_sizes/font_size = 15
+text = "Movement Team Lead:
+Erik Apruda
+Team:
+Riley Wells
+Jose Daniel Suchite Ramirez"
+
+[node name="GUI_CRED" type="Label" parent="."]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 259.0
+offset_right = 711.0
+offset_bottom = 614.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_aiglh")
+theme_override_font_sizes/font_size = 15
+text = "GUI Team Lead:
+Adrian Munoz
+GUI Assistant Lead:
+James Vest
+Team:
+Kensey McDowell
+Daniel Powers
+Cam Murnane
+Vivian O’Connor
+Ryan Francis
+Stephanie Zhang "
+
+[node name="LEVEL_DESIGN_CRED" type="Label" parent="."]
+layout_mode = 0
+offset_left = 715.0
+offset_top = 419.0
+offset_right = 963.0
+offset_bottom = 508.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_aiglh")
+theme_override_font_sizes/font_size = 15
+text = "Level Design Lead:
+Jake Weaver
+Team:
+Rob Emerson"
+
+[node name="ART_CRED" type="Label" parent="."]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 264.0
+offset_right = 362.0
+offset_bottom = 323.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_aiglh")
+theme_override_font_sizes/font_size = 15
+text = "Art Lead:
+Eliza Danila"
+
+[node name="Return" type="Button" parent="."]
+layout_mode = 0
+offset_left = 843.0
+offset_top = 170.0
+offset_right = 959.0
+offset_bottom = 214.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_aiglh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6d60s")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_sird1")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irr2h")
+text = "Return to 
+Main Menu"
+script = ExtResource("4_fqyrr")
+
+[connection signal="pressed" from="Return" to="Return" method="_on_pressed"]

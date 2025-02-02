@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc4hs0pcohdra"
-path="res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"
+uid="uid://tc87fd2qhhji"
+path="res://.godot/imported/survivor-idle_knife_5.png-276d133699874864cb916511b733728a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/BasicFurniture_0000s_0000s_0001_Interior-wall.png"
-dest_files=["res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"]
+source_file="res://Assets/survivor-idle_knife_5.png"
+dest_files=["res://.godot/imported/survivor-idle_knife_5.png-276d133699874864cb916511b733728a.ctex"]
 
 [params]
 

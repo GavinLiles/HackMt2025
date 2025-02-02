@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc4hs0pcohdra"
-path="res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"
+uid="uid://df1vjj06gdhoq"
+path="res://.godot/imported/Deploy2.0.png-5915e922ce69a8364b1725718eada0c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/BasicFurniture_0000s_0000s_0001_Interior-wall.png"
-dest_files=["res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"]
+source_file="res://mission_screen_2.0/mission_screen/Deploy2.0.png"
+dest_files=["res://.godot/imported/Deploy2.0.png-5915e922ce69a8364b1725718eada0c7.ctex"]
 
 [params]
 

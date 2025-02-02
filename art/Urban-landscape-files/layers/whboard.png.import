@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc4hs0pcohdra"
-path="res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"
+uid="uid://qi2yj3s04o5t"
+path="res://.godot/imported/whboard.png-e4cc5f1265061d2a1ba9a3682d7c1350.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/BasicFurniture_0000s_0000s_0001_Interior-wall.png"
-dest_files=["res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"]
+source_file="res://whboard.png"
+dest_files=["res://.godot/imported/whboard.png-e4cc5f1265061d2a1ba9a3682d7c1350.ctex"]
 
 [params]
 
