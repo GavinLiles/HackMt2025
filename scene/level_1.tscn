@@ -1,11 +1,9 @@
-[gd_scene load_steps=41 format=4 uid="uid://dwj6o3o6xvl5t"]
+[gd_scene load_steps=39 format=4 uid="uid://dwj6o3o6xvl5t"]
 
 [ext_resource type="Texture2D" uid="uid://cqryp11fj67dt" path="res://Assets/frame/blue.png" id="1_68wa8"]
 [ext_resource type="Texture2D" uid="uid://bml7eey1aof5" path="res://Assets/frame/floor brown.png" id="2_76fvf"]
-[ext_resource type="Texture2D" path="res://assets/512x512/Grass/Grass_02-512x512.png" id="3_6mtrx"]
 [ext_resource type="Texture2D" uid="uid://miwklnvgq8i4" path="res://Assets/frame/gray.png" id="3_fmbox"]
 [ext_resource type="Texture2D" uid="uid://v15ykchnq8bi" path="res://Assets/frame/wall brown.png" id="4_ssa07"]
-[ext_resource type="Texture2D" path="res://assets/512x512/Wood/Wood_02-512x512.png" id="4_tkj6s"]
 [ext_resource type="Texture2D" uid="uid://cl7t6l8aa2j2" path="res://Assets/frame/yellow.png" id="5_lrxwq"]
 [ext_resource type="Texture2D" uid="uid://b8xp4gwacoew6" path="res://Assets/DEMO.png" id="6_l3pqp"]
 [ext_resource type="Texture2D" uid="uid://brwktvwqsyjv1" path="res://Assets/frame/green.png" id="6_mvq6r"]
@@ -13,10 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://dtpnmt2awhvfn" path="res://Assets/frame/floor.png" id="8_3kxmf"]
 [ext_resource type="Texture2D" uid="uid://biluelwqyoi31" path="res://Assets/frame/wall.png" id="9_esdkl"]
 [ext_resource type="Texture2D" uid="uid://ccgpbtubj8kvj" path="res://Assets/frame/dark_grey.png" id="10_4h6rk"]
-[ext_resource type="PackedScene" uid="uid://s3rhy57o7hxi" path="res://scene/camera_guy.tscn" id="11_0nc6g"]
-[ext_resource type="PackedScene" uid="uid://b5ggtkd5fp2bp" path="res://scene/light_door_cw.tscn" id="16_emrjy"]
-[ext_resource type="PackedScene" uid="uid://bhpwj7cep8lcb" path="res://scene/heavy_door_cw.tscn" id="17_a5mf0"]
-[ext_resource type="PackedScene" uid="uid://d0swh1mjet41c" path="res://scene/light_door_cc.tscn" id="18_c2108"]
+[ext_resource type="PackedScene" uid="uid://s3rhy57o7hxi" path="res://scenes/camera_guy.tscn" id="11_0nc6g"]
+[ext_resource type="PackedScene" uid="uid://b5ggtkd5fp2bp" path="res://scenes/light_door_cw.tscn" id="16_emrjy"]
+[ext_resource type="PackedScene" uid="uid://bhpwj7cep8lcb" path="res://scenes/heavy_door_cw.tscn" id="17_a5mf0"]
+[ext_resource type="PackedScene" uid="uid://d0swh1mjet41c" path="res://scenes/light_door_cc.tscn" id="18_c2108"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_810sl"]
 texture = ExtResource("5_lrxwq")
@@ -42,7 +40,6 @@ texture = ExtResource("2_76fvf")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6jih3"]
-texture = ExtResource("3_6mtrx")
 29:30/0 = 0
 29:29/0 = 0
 30:29/0 = 0
@@ -53,7 +50,6 @@ texture = ExtResource("3_6mtrx")
 30:28/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r7ht6"]
-texture = ExtResource("4_tkj6s")
 29:31/0 = 0
 29:30/0 = 0
 29:29/0 = 0
