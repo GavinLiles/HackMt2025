@@ -14,7 +14,7 @@ extends VBoxContainer
 
 const Class_Choices = {
 	"Rifleman": {
-		"Character": "res://Assets/Characters/Screenshot 2025-02-01 at 12.41.25 AM.png",
+		"Character": "res://Assets/Characters/Barney.png",
 		"Image": "res://Assets/Weapons/assaultRifle.png",
 		"Health": 100,
 		"Weapon": "_Assault Rifle_",
@@ -28,7 +28,7 @@ const Class_Choices = {
 
 	},
 	"Scout": {
-		"Character": "res://Assets/Characters/Screenshot 2025-02-01 at 12.41.32 AM.png",
+		"Character": "res://Assets/Characters/GreenLady.png",
 		"Image": "res://Assets/Weapons/smg.png",
 		"Health": 60,
 		"Weapon": "_SMG_",
@@ -41,7 +41,7 @@ const Class_Choices = {
 		},
 	},
 	"Breacher": {
-		"Character": "res://Assets/Characters/Screenshot 2025-02-01 at 12.41.36 AM.png",
+		"Character": "res://Assets/Characters/OrangeMan.png",
 		"Image": "res://Assets/Weapons/shotgun.png",
 		"Health": 100,
 		"Weapon": "_Shotgun_",
@@ -54,7 +54,7 @@ const Class_Choices = {
 		},
 	},
 	"Heavy": {
-		"Character": "res://Assets/Characters/Screenshot 2025-02-01 at 12.41.42 AM.png",
+		"Character": "res://Assets/Characters/YellowMan.png",
 		"Image": "res://Assets/Weapons/lmg.png",
 		"Health": 150,
 		"Weapon": "_LMG_",
