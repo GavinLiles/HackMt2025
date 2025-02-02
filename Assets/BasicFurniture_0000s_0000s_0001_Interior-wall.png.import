@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dum7y2qm3d38l"
 path="res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"
+=======
+uid="uid://cc4hs0pcohdra"
+path="res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-e29e71333bef5b788ee6004a37faf2d1.ctex"
+>>>>>>> 40346294bceccddb99e00549c5fd2126c1f6b7f4
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD
 source_file="res://Assets/BasicFurniture_0000s_0000s_0001_Interior-wall.png"
 dest_files=["res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-b65f1058bfa0ed00addbd9fa0a9e0b12.ctex"]
+=======
+source_file="res://assets/BasicFurniture_0000s_0000s_0001_Interior-wall.png"
+dest_files=["res://.godot/imported/BasicFurniture_0000s_0000s_0001_Interior-wall.png-e29e71333bef5b788ee6004a37faf2d1.ctex"]
+>>>>>>> 40346294bceccddb99e00549c5fd2126c1f6b7f4
 
 [params]
 
