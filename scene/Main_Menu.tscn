@@ -1,7 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://pajwouk5vldn"]
+[gd_scene load_steps=30 format=3 uid="uid://pajwouk5vldn"]
 
 [ext_resource type="PackedScene" uid="uid://byvg731xmpje" path="res://scene/Main_Menu_BGM.tscn" id="1_kdhx4"]
-[ext_resource type="Script" path="res://scene/Transition.gd" id="1_v6gn5"]
 [ext_resource type="Shader" path="res://Scripts/Scroll.gdshader" id="2_cujic"]
 [ext_resource type="Shader" path="res://Scripts/Scoll2.gdshader" id="2_qld2n"]
 [ext_resource type="Script" path="res://scene/patrol.gd" id="3_s6l33"]
@@ -16,6 +15,20 @@
 [ext_resource type="AudioStream" uid="uid://kafacr6ojbm7" path="res://sound/Military Voice Pack 2/Variation 1/Follow Me 1.wav" id="12_33nw1"]
 [ext_resource type="AudioStream" uid="uid://mloji0fg40iu" path="res://sound/Military Voice Pack 2/Variation 1/Legends Here 2.wav" id="13_wenfc"]
 
+[sub_resource type="GDScript" id="GDScript_1j3t8"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ud28p"]
 shader = ExtResource("2_qld2n")
 shader_parameter/Speed = 0.1
@@ -24,6 +37,30 @@ shader_parameter/Speed = 0.1
 shader = ExtResource("2_cujic")
 shader_parameter/Speed = 0.1
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s1exi"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mf7qg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kckpt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_s4son"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_76vp3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eg3t0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_68a7h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pldo6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_im8uy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_icitt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_odqwo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_je772"]
+
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -31,7 +68,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_v6gn5")
+script = SubResource("GDScript_1j3t8")
 
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("1_kdhx4")]
 
@@ -39,7 +76,7 @@ script = ExtResource("1_v6gn5")
 script = ExtResource("3_s6l33")
 
 [node name="Background" type="Sprite2D" parent="Node2D"]
-self_modulate = Color(0.347817, 0.347817, 0.347817, 1)
+self_modulate = Color(0.270222, 0.270222, 0.270222, 1)
 texture_repeat = 2
 material = SubResource("ShaderMaterial_ud28p")
 position = Vector2(611, 268)
@@ -47,7 +84,7 @@ scale = Vector2(3.72917, 3.4375)
 texture = ExtResource("3_ttcqo")
 
 [node name="middleGround" type="Sprite2D" parent="Node2D"]
-self_modulate = Color(0.355314, 0.355314, 0.355314, 1)
+self_modulate = Color(0.259294, 0.259294, 0.259294, 1)
 texture_repeat = 2
 material = SubResource("ShaderMaterial_rlhce")
 position = Vector2(648.5, 286.75)
@@ -63,7 +100,7 @@ grow_vertical = 2
 color = Color(0.0398189, 0.172735, 0.286787, 1)
 
 [node name="Road" type="TextureRect" parent="Node2D"]
-self_modulate = Color(0.400698, 0.400698, 0.400698, 1)
+self_modulate = Color(0.359069, 0.359069, 0.359069, 1)
 offset_left = -2941.0
 offset_top = 520.0
 offset_right = 4113.0
@@ -111,7 +148,7 @@ horizontal_alignment = 1
 [node name="Title" type="Label" parent="Title_Container"]
 layout_mode = 2
 theme = ExtResource("7_2d1rd")
-theme_override_colors/font_color = Color(0.618211, 0.618721, 0.606427, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 0.439216)
 theme_override_font_sizes/font_size = 45
 text = "Breachers 
 Chokepoint"
@@ -136,6 +173,9 @@ script = ExtResource("10_v2xko")
 layout_mode = 2
 theme = ExtResource("7_2d1rd")
 theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxTexture_s1exi")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_mf7qg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_kckpt")
 text = "Level Select"
 
 [node name="Start_Pressed" type="AudioStreamPlayer" parent="Button_Container"]
@@ -145,6 +185,9 @@ stream = ExtResource("11_0bhba")
 layout_mode = 2
 theme = ExtResource("7_2d1rd")
 theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxTexture_s4son")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_76vp3")
+theme_override_styles/normal = SubResource("StyleBoxTexture_eg3t0")
 text = "Options"
 
 [node name="Options_Pressed" type="AudioStreamPlayer" parent="Button_Container"]
@@ -154,6 +197,9 @@ stream = ExtResource("12_33nw1")
 layout_mode = 2
 theme = ExtResource("7_2d1rd")
 theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxTexture_68a7h")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pldo6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_im8uy")
 text = "Credits"
 
 [node name="Credits_Pressed" type="AudioStreamPlayer" parent="Button_Container"]
@@ -163,6 +209,9 @@ stream = ExtResource("13_wenfc")
 layout_mode = 2
 theme = ExtResource("7_2d1rd")
 theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxTexture_icitt")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_odqwo")
+theme_override_styles/normal = SubResource("StyleBoxTexture_je772")
 text = "Quit
 "
 

@@ -13,6 +13,14 @@ enum {
 	HALLWAY
 }
 
+#struct for holding room data
+class room:
+	var timer: int = 0
+	var op_count = 0
+	var t_count = 0
+	
+@onready var rooms = [room, room, room, room, room, room]
+
 #Blackboard Functions (static values)
 func calcDistanceScore (distanceFromTarget, desiredFiringRange):
 	var distanceDelta = distanceFromTarget - desiredFiringRange
@@ -27,28 +35,31 @@ func calcAmmoRatio (currentAmmo, maxAmmo):
 	var ammoRatio = currentAmmo/maxAmmo
 	return ammoRatio
 	
+func calcEnemyRatio(operators_in_room, total_entities_in_room):
+	return operators_in_room/total_entities_in_room
+	
+var line_of_sight = false
+var dist_from_target = 5
 
-var line_of_sight
-var dist_from_target
+var distance_score: float = 1
+var health_ratio: float = 1
+var ammo_ratio: float = 1
+var enemy_ratio: float = 1
 
-var distance_score
-var health_ratio
-var ammo_ratio
+var curr_health = 100
+var max_health = 100
+var curr_ammo = 100
+var max_ammo = 100
+var has_special = false
+var desired_firing_range = 5
 
-var curr_health
-var max_health
-var curr_ammo
-var max_ammo
-var has_special
-var desired_firing_range
+var terrorist_count = 14
+var operator_count = 4
 
-var terrorist_count
-var operator_count
-
-var room_timers = [0,0,0,0,0,0]
 
 func _process(delta):
 	#UBAI functions
 	distance_score = calcDistanceScore(dist_from_target, desired_firing_range)
 	health_ratio = calcHealthRatio(curr_health, max_health)
 	ammo_ratio = calcAmmoRatio(curr_ammo, max_ammo)
+	#enemy_ratio = calcEnemyRatio(ops_in_room, total_in_room)

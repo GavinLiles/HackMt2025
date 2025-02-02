@@ -16,19 +16,23 @@ func shootDesirability(los, ammoRatio, distanceScore):
 	var finalDesirability = (distanceScore * distanceWeight + ammoRatio * distanceWeight)/totalWeight
 	return finalDesirability
 
-func alertDesirability(los, soundVolume):
-	var soundThreshold = 0.5
-	if los or soundVolume >= soundThreshold:
+func alertDesirability(los):
+	if los:
 		return 1
 	return 0
 
-# TO DO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 func specialDesirability(enemyRatio, hasSpecial, distanceScore):
 	if hasSpecial == false:
 		return 0
-	#TO DO!!!!!
+	
+	var enemyRatioWeight = 2
+	var distanceScoreWeight = 3
+	var totalWeight = enemyRatioWeight + distanceScoreWeight
+	
+	var finalDesirability = (enemyRatio * enemyRatioWeight + distanceScore + distanceScoreWeight) / totalWeight
+	return finalDesirability
 
-func retreatDesirability (enemyRatio, healthRatio, ammoRatio):
+func retreatDesirability(enemyRatio, healthRatio, ammoRatio):
 	var enemyRatioWeight = 3
 	var ammoRatioWeight = 2
 	var healthRatioWeight = 1
@@ -41,6 +45,6 @@ func retreatDesirability (enemyRatio, healthRatio, ammoRatio):
 func _process(delta: float) -> void:
 	reloadDesirablity(Global.ammo_ratio)
 	shootDesirability(Global.line_of_sight, Global.ammo_ratio, Global.distance_score)
-	alertDesirability(Global.line_of_sight, Global.sound_volume)
+	alertDesirability(Global.line_of_sight)
 	specialDesirability(Global.enemy_ratio, Global.has_special, Global.distance_score)
 	retreatDesirability(Global.enemy_ratio, Global.health_ratio, Global.ammo_ratio)

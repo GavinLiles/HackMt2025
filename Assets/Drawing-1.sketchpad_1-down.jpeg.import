@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clh1hp2vqncw5"
-path="res://.godot/imported/Drawing-1.sketchpad_1-down.jpeg-efc9c4e79d3747e36993b4213b937e88.ctex"
+path="res://.godot/imported/Drawing-1.sketchpad_1-down.jpeg-5a19150f44ef7a23847692299f1a997d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Drawing-1.sketchpad_1-down.jpeg"
-dest_files=["res://.godot/imported/Drawing-1.sketchpad_1-down.jpeg-efc9c4e79d3747e36993b4213b937e88.ctex"]
+source_file="res://Assets/Drawing-1.sketchpad_1-down.jpeg"
+dest_files=["res://.godot/imported/Drawing-1.sketchpad_1-down.jpeg-5a19150f44ef7a23847692299f1a997d.ctex"]
 
 [params]
 

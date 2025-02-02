@@ -14,7 +14,7 @@ extends VBoxContainer
 
 const Class_Choices = {
 	"Rifleman": {
-		"Character": "res://Assets/Characters/Barney.png",
+		"Character": "res://Assets/Characters/survivor-idle_knife_5.png",
 		"Image": "res://Assets/Weapons/assaultRifle.png",
 		"Health": 100,
 		"Weapon": "_Assault Rifle_",
@@ -28,7 +28,7 @@ const Class_Choices = {
 
 	},
 	"Scout": {
-		"Character": "res://Assets/Characters/GreenLady.png",
+		"Character": "res://Assets/Characters/survivor-idle_handgun_0.png",
 		"Image": "res://Assets/Weapons/smg.png",
 		"Health": 60,
 		"Weapon": "_SMG_",
@@ -41,7 +41,7 @@ const Class_Choices = {
 		},
 	},
 	"Breacher": {
-		"Character": "res://Assets/Characters/OrangeMan.png",
+		"Character": "res://Assets/Characters/survivor-idle_shotgun_0.png",
 		"Image": "res://Assets/Weapons/shotgun.png",
 		"Health": 100,
 		"Weapon": "_Shotgun_",
@@ -54,7 +54,7 @@ const Class_Choices = {
 		},
 	},
 	"Heavy": {
-		"Character": "res://Assets/Characters/YellowMan.png",
+		"Character": "res://Assets/Characters/survivor-idle_rifle_5.png",
 		"Image": "res://Assets/Weapons/lmg.png",
 		"Health": 150,
 		"Weapon": "_LMG_",

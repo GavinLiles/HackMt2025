@@ -2,6 +2,12 @@ extends Area2D
 
 var friendly_count = 0
 var enemy_count = 0
+<<<<<<< HEAD
+=======
+
+Global.MASTER_BEDROOM
+Global.room_timers[MASTER_BEDROOM]
+>>>>>>> 2fcdf360356d873c4553cb86072ae80f5256db69
 var timing = false
 
 func _physics_process(delta):
