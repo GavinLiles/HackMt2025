@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var sp = 25
+@export var sp = 800
 @export var range_min = 0
 @export var range_max = 1
 
@@ -9,10 +9,11 @@ var shattered = false
 var opened = false
 var breached = false
 var locked
+
 var lock_side = "cw"
 var open_direction = "cw"
 var bs
-var bt = 0
+var bt
 
 #TEMP
 var signal_in
@@ -21,11 +22,11 @@ var str = 0
 
 func _process(delta: float) -> void:
 	if bt == 0:
-		_open()
+		pass
 	elif bt == 1:
-		_basic_breach(bs)
+		pass
 	elif bt == 2:
-		_tool_breach(bs)
+		pass
 	elif bt == 3:
 		_charge_breach()
 
@@ -98,8 +99,8 @@ func _charge_breach():
 	shattered = true
 	breached = true
 	if shattered:
-		$Hinge/CharacterBody2D/CollisionShape2D.disabled = true
-		$Hinge/CharacterBody2D/Sprite2D.visible = false
+		$CharacterBody2D/Sprite2D.visible = false
+		$CharacterBody2D/CollisionShape2D.disabled = true
 	pass
 
 

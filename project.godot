@@ -17,9 +17,19 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+<<<<<<< HEAD
 TransitionScreen="*res://transition_screen.gd"
 
 [display]
 
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+=======
+Global="*res://global_variables.gd"
+
+[global_group]
+
+rooms=""
+operators=""
+terrorists=""
+>>>>>>> 0a745f8635d3a49e20a12c60acc84ccfc14a7c2a

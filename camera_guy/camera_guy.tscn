@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://s3rhy57o7hxi"]
+
+[ext_resource type="Script" path="res://scripts/camera_guy.gd" id="1_3iy73"]
+[ext_resource type="Script" path="res://scripts/camera_2d.gd" id="2_5holl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cos6q"]
+
+[node name="camera_guy" type="CharacterBody2D"]
+script = ExtResource("1_3iy73")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+script = ExtResource("2_5holl")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+remote_path = NodePath("../Camera2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cos6q")
+disabled = true
