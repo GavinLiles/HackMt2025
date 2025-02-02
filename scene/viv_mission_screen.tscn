@@ -1,12 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bdbpknwex6rx0"]
+[gd_scene load_steps=7 format=3 uid="uid://bdbpknwex6rx0"]
 
-[ext_resource type="Script" path="res://viv_mission_screen.gd" id="1_jumtu"]
-[ext_resource type="Texture2D" uid="uid://dqkb4cj0b1g8m" path="res://newboard.jpg" id="1_okcg5"]
-[ext_resource type="Texture2D" uid="uid://drspvnyfmk1tu" path="res://stickyn.png" id="2_o3ee2"]
-[ext_resource type="Texture2D" uid="uid://bpm5f5ucyqwn1" path="res://paper.png" id="3_j36fk"]
-[ext_resource type="FontFile" uid="uid://vdx3j62hjebo" path="res://PVF_tickler/PVF_Tickler/PVF_Tickler.otf" id="4_7xhcd"]
-[ext_resource type="Texture2D" uid="uid://dftwsi5wwuoa3" path="res://gpaper.png" id="4_8ss0k"]
-[ext_resource type="Texture2D" uid="uid://c4umqronb8dq1" path="res://deploy3.0.png" id="7_8j4x3"]
+[ext_resource type="Script" path="res://scripts/viv_mission_screen.gd" id="1_jumtu"]
+[ext_resource type="Texture2D" uid="uid://dqkb4cj0b1g8m" path="res://mission_screen_2.0/mission_screen/newboard.jpg" id="1_okcg5"]
+[ext_resource type="Texture2D" uid="uid://drspvnyfmk1tu" path="res://mission_screen_2.0/mission_screen/stickyn.png" id="2_o3ee2"]
+[ext_resource type="Texture2D" uid="uid://bpm5f5ucyqwn1" path="res://mission_screen_2.0/mission_screen/paper.png" id="3_j36fk"]
+[ext_resource type="Texture2D" uid="uid://dftwsi5wwuoa3" path="res://mission_screen_2.0/mission_screen/gpaper.png" id="4_8ss0k"]
+[ext_resource type="Texture2D" uid="uid://c4umqronb8dq1" path="res://mission_screen_2.0/mission_screen/deploy3.0.png" id="7_8j4x3"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -19,17 +18,15 @@ script = ExtResource("1_jumtu")
 
 [node name="whiteboard" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.996734
-anchor_bottom = 1.00145
-offset_right = 51.7627
-offset_bottom = 1351.06
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 473.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.00811, 0.577864)
 texture = ExtResource("1_okcg5")
 expand_mode = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="sticky 1" type="TextureRect" parent="whiteboard"]
 z_index = 11
@@ -58,7 +55,7 @@ texture = ExtResource("2_o3ee2")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="whiteboard/sticky 2"]
+[node name="Reveal_MainM" type="Button" parent="whiteboard/sticky 2"]
 show_behind_parent = true
 custom_minimum_size = Vector2(50, 110)
 layout_mode = 1
@@ -74,7 +71,7 @@ text = "Tutorial"
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="whiteboard/sticky 2/Button"]
+[node name="Label" type="Label" parent="whiteboard/sticky 2/Reveal_MainM"]
 modulate = Color(0.0274091, 0.0274092, 0.0274092, 1)
 z_index = 13
 layout_mode = 1
@@ -83,16 +80,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -130.5
-offset_top = -80.0
-offset_right = 130.5
-offset_bottom = 80.0
+offset_left = -132.763
+offset_top = -59.611
+offset_right = 128.237
+offset_bottom = 100.389
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -6.28319
-theme_override_fonts/font = ExtResource("4_7xhcd")
-theme_override_font_sizes/font_size = 150
-text = "Main"
+theme_override_font_sizes/font_size = 45
+text = "Main
+Mission"
+horizontal_alignment = 1
 
 [node name="paper2" type="TextureRect" parent="whiteboard"]
 layout_mode = 1
@@ -120,8 +118,7 @@ offset_right = 364.5
 offset_bottom = 149.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("4_7xhcd")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 25
 text = "
 
 	We have received intel
@@ -141,7 +138,6 @@ offset_top = 252.28
 offset_right = 356.892
 offset_bottom = 409.28
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_7xhcd")
 theme_override_font_sizes/font_size = 45
 text = "Objective:"
 
@@ -172,8 +168,7 @@ offset_bottom = 310.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.0383972, 0.0383972, 0.0383972, 1)
-theme_override_fonts/font = ExtResource("4_7xhcd")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 25
 text = "
 
 It is undetermined 
@@ -193,7 +188,6 @@ offset_top = 233.619
 offset_right = 267.59
 offset_bottom = 328.619
 theme_override_colors/font_color = Color(0.00184107, 0.00184107, 0.00184107, 1)
-theme_override_fonts/font = ExtResource("4_7xhcd")
 theme_override_font_sizes/font_size = 45
 text = "Notes: "
 
@@ -218,6 +212,14 @@ rotation = -0.202458
 texture = ExtResource("7_8j4x3")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="Mission_Select" type="Button" parent="whiteboard"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 388.0
+offset_top = 827.0
+offset_right = 725.0
+offset_bottom = 1007.0
 
 [node name="Label" type="Label" parent="whiteboard"]
 layout_mode = 1
@@ -249,15 +251,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -116.49
-offset_top = -63.2606
-offset_right = 122.51
-offset_bottom = 157.739
+offset_left = -80.1667
+offset_top = -64.9282
+offset_right = 155.833
+offset_bottom = 170.072
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.00566115, 0.00566115, 0.00566115, 1)
-theme_override_fonts/font = ExtResource("4_7xhcd")
-theme_override_font_sizes/font_size = 85
+theme_override_font_sizes/font_size = 55
 text = "Main
 Menu"
 
@@ -273,6 +274,7 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="whiteboard/sticky 2/Button" to="." method="_on_button_pressed"]
-[connection signal="toggled" from="whiteboard/sticky 2/Button" to="." method="_on_button_toggled"]
+[connection signal="pressed" from="whiteboard/sticky 2/Reveal_MainM" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="whiteboard/sticky 2/Reveal_MainM" to="." method="_on_button_toggled"]
+[connection signal="pressed" from="whiteboard/Mission_Select" to="." method="_on_mission_select_pressed"]
 [connection signal="pressed" from="whiteboard/bottom_sticky/main_menu" to="." method="_on_main_menu_pressed"]

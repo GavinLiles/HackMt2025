@@ -1,0 +1,278 @@
+[gd_scene load_steps=8 format=3 uid="uid://bdbpknwex6rx0"]
+
+[ext_resource type="Script" path="res://viv_mission_screen.gd" id="1_jumtu"]
+[ext_resource type="Texture2D" uid="uid://dqkb4cj0b1g8m" path="res://newboard.jpg" id="1_okcg5"]
+[ext_resource type="Texture2D" uid="uid://drspvnyfmk1tu" path="res://stickyn.png" id="2_o3ee2"]
+[ext_resource type="Texture2D" uid="uid://bpm5f5ucyqwn1" path="res://paper.png" id="3_j36fk"]
+[ext_resource type="FontFile" uid="uid://vdx3j62hjebo" path="res://PVF_tickler/PVF_Tickler/PVF_Tickler.otf" id="4_7xhcd"]
+[ext_resource type="Texture2D" uid="uid://dftwsi5wwuoa3" path="res://gpaper.png" id="4_8ss0k"]
+[ext_resource type="Texture2D" uid="uid://c4umqronb8dq1" path="res://deploy3.0.png" id="7_8j4x3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jumtu")
+
+[node name="whiteboard" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.996734
+anchor_bottom = 1.00145
+offset_right = 51.7627
+offset_bottom = 1351.06
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.00811, 0.577864)
+texture = ExtResource("1_okcg5")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="sticky 1" type="TextureRect" parent="whiteboard"]
+z_index = 11
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.124104
+anchor_top = 0.104322
+anchor_right = 0.275645
+anchor_bottom = 0.346343
+texture = ExtResource("2_o3ee2")
+metadata/_edit_use_anchors_ = true
+
+[node name="sticky 2" type="TextureRect" parent="whiteboard"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.114075
+anchor_top = 0.39023
+anchor_right = 0.305742
+anchor_bottom = 0.65573
+offset_left = -9.15527e-05
+offset_top = 0.00012207
+offset_right = -6.10352e-05
+offset_bottom = 0.00012207
+texture = ExtResource("2_o3ee2")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="whiteboard/sticky 2"]
+show_behind_parent = true
+custom_minimum_size = Vector2(50, 110)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.126087
+anchor_top = 0.160075
+anchor_right = 0.856522
+anchor_bottom = 0.905838
+grow_horizontal = 2
+grow_vertical = 0
+action_mode = 0
+text = "Tutorial"
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="whiteboard/sticky 2/Button"]
+modulate = Color(0.0274091, 0.0274092, 0.0274092, 1)
+z_index = 13
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -130.5
+offset_top = -80.0
+offset_right = 130.5
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -6.28319
+theme_override_fonts/font = ExtResource("4_7xhcd")
+theme_override_font_sizes/font_size = 150
+text = "Main"
+
+[node name="paper2" type="TextureRect" parent="whiteboard"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.504167
+anchor_top = 0.0945
+anchor_right = 0.886667
+anchor_bottom = 0.4545
+texture = ExtResource("3_j36fk")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Objective" type="Label" parent="whiteboard/paper2"]
+visible = false
+modulate = Color(0.0708272, 0.0708272, 0.0708272, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -364.5
+offset_top = -149.0
+offset_right = 364.5
+offset_bottom = 149.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_7xhcd")
+theme_override_font_sizes/font_size = 40
+text = "
+
+	We have received intel
+about a foreseen terrorist 
+attack at this location.
+It is your objective to
+eliminate the enemies
+before they advance. Be 
+strategic, but it is 
+important you act fast 
+before it's too late..."
+
+[node name="Label" type="Label" parent="whiteboard/paper2"]
+layout_mode = 0
+offset_left = 24.8916
+offset_top = 252.28
+offset_right = 356.892
+offset_bottom = 409.28
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_7xhcd")
+theme_override_font_sizes/font_size = 45
+text = "Objective:"
+
+[node name="gpaper" type="TextureRect" parent="whiteboard"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.338091
+anchor_top = 0.368599
+anchor_right = 0.574758
+anchor_bottom = 0.678599
+offset_right = 6.10352e-05
+texture = ExtResource("4_8ss0k")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Notes" type="Label" parent="whiteboard/gpaper"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -307.0
+offset_top = -215.0
+offset_right = 317.0
+offset_bottom = 310.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.0383972, 0.0383972, 0.0383972, 1)
+theme_override_fonts/font = ExtResource("4_7xhcd")
+theme_override_font_sizes/font_size = 45
+text = "
+
+It is undetermined 
+how many enemies
+and what weaponry
+they have equipped.
+However, the layout 
+of the location has 
+been provided with 
+entry points. Good 
+Luck!"
+
+[node name="Label" type="Label" parent="whiteboard/gpaper"]
+layout_mode = 0
+offset_left = 50.5897
+offset_top = 233.619
+offset_right = 267.59
+offset_bottom = 328.619
+theme_override_colors/font_color = Color(0.00184107, 0.00184107, 0.00184107, 1)
+theme_override_fonts/font = ExtResource("4_7xhcd")
+theme_override_font_sizes/font_size = 45
+text = "Notes: "
+
+[node name="map_layout" type="TextureRect" parent="whiteboard"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.609167
+anchor_top = 0.4705
+anchor_right = 0.888333
+anchor_bottom = 0.833
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="deploy" type="TextureRect" parent="whiteboard"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.325692
+anchor_top = 0.793439
+anchor_right = 0.607359
+anchor_bottom = 0.907439
+rotation = -0.202458
+texture = ExtResource("7_8j4x3")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="whiteboard"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.776205
+anchor_top = 0.726815
+anchor_right = 0.995372
+anchor_bottom = 0.964815
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.969137, 0.969137, 0.969137, 1)
+theme_override_font_sizes/font_size = 40
+metadata/_edit_use_anchors_ = true
+
+[node name="bottom_sticky" type="TextureRect" parent="whiteboard"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.109167
+anchor_top = 0.6655
+anchor_right = 0.288333
+anchor_bottom = 0.886
+texture = ExtResource("2_o3ee2")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="whiteboard/bottom_sticky"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -116.49
+offset_top = -63.2606
+offset_right = 122.51
+offset_bottom = 157.739
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.00566115, 0.00566115, 0.00566115, 1)
+theme_override_fonts/font = ExtResource("4_7xhcd")
+theme_override_font_sizes/font_size = 85
+text = "Main
+Menu"
+
+[node name="main_menu" type="Button" parent="whiteboard/bottom_sticky"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.116279
+anchor_top = 0.160998
+anchor_right = 0.860465
+anchor_bottom = 0.918367
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="whiteboard/sticky 2/Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="whiteboard/sticky 2/Button" to="." method="_on_button_toggled"]
+[connection signal="pressed" from="whiteboard/bottom_sticky/main_menu" to="." method="_on_main_menu_pressed"]
