@@ -1,9 +1,10 @@
-[gd_scene load_steps=17 format=3 uid="uid://c3kgwsgsauiw4"]
+[gd_scene load_steps=18 format=3 uid="uid://pajwouk5vldn"]
 
 [ext_resource type="PackedScene" uid="uid://byvg731xmpje" path="res://scene/Main_Menu_BGM.tscn" id="1_kdhx4"]
 [ext_resource type="Script" path="res://scene/Transition.gd" id="1_v6gn5"]
 [ext_resource type="Shader" path="res://Scripts/Scroll.gdshader" id="2_cujic"]
 [ext_resource type="Shader" path="res://Scripts/Scoll2.gdshader" id="2_qld2n"]
+[ext_resource type="Script" path="res://scene/patrol.gd" id="3_s6l33"]
 [ext_resource type="Texture2D" uid="uid://bq1rageurwbky" path="res://art/Urban-landscape-files/urban-landscape-background-Preview.png" id="3_ttcqo"]
 [ext_resource type="Texture2D" uid="uid://c5d14ft713kas" path="res://art/Urban-landscape-files/layers/buildings-layer.png" id="4_urnb8"]
 [ext_resource type="Texture2D" uid="uid://dudnorxxrnxcq" path="res://art/vecteezy_realistic-line-shadow-effect_21104212.png" id="5_l4vm1"]
@@ -35,6 +36,7 @@ script = ExtResource("1_v6gn5")
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("1_kdhx4")]
 
 [node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("3_s6l33")
 
 [node name="Background" type="Sprite2D" parent="Node2D"]
 self_modulate = Color(0.347817, 0.347817, 0.347817, 1)
