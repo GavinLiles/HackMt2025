@@ -1,7 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cinmfyw4burt2"]
+[gd_scene load_steps=12 format=3 uid="uid://cinmfyw4burt2"]
 
-[ext_resource type="Script" path="res://scripts/door.gd" id="1_pdvae"]
+[ext_resource type="Script" path="res://scripts/garage_door.gd" id="1_ev214"]
 [ext_resource type="Texture2D" uid="uid://dps5v4k1wg3h7" path="res://assets/garage.png" id="2_6wgvt"]
+[ext_resource type="AudioStream" uid="uid://8rxyg2sec4r1" path="res://assets/Audio/door_open.mp3" id="3_4ndk0"]
+[ext_resource type="AudioStream" uid="uid://de788ehlletqg" path="res://assets/Audio/door_close.mp3" id="4_gpryf"]
+[ext_resource type="AudioStream" uid="uid://ysl2a70y7v4q" path="res://assets/Audio/door_break.mp3" id="5_quebj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0frxd"]
 size = Vector2(365, 32)
@@ -28,7 +31,7 @@ _data = {
 }
 
 [node name="garage_door" type="Node2D"]
-script = ExtResource("1_pdvae")
+script = ExtResource("1_ev214")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(69, -6)
@@ -47,3 +50,12 @@ shape = SubResource("RectangleShape2D_0frxd")
 libraries = {
 "": SubResource("AnimationLibrary_fukdi")
 }
+
+[node name="Open_Audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_4ndk0")
+
+[node name="Close_Audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_gpryf")
+
+[node name="Break_Audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_quebj")
