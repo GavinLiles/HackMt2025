@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lri3r21u5put"
-path="res://.godot/imported/survivor-idle_rifle_5.png-c6d9061f5356c3be9bede81ad2736616.ctex"
+path="res://.godot/imported/survivor-idle_rifle_5.png-13c3001ee6d3634bd61222cdb4d1a255.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/survivor-idle_rifle_5.png"
-dest_files=["res://.godot/imported/survivor-idle_rifle_5.png-c6d9061f5356c3be9bede81ad2736616.ctex"]
+source_file="res://Assets/survivor-idle_rifle_5.png"
+dest_files=["res://.godot/imported/survivor-idle_rifle_5.png-13c3001ee6d3634bd61222cdb4d1a255.ctex"]
 
 [params]
 
