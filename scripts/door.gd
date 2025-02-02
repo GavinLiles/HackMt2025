@@ -9,6 +9,7 @@ var shattered = false
 var opened = false
 var breached = false
 var locked
+
 var lock_side = "cw"
 var open_direction = "cw"
 var bs
