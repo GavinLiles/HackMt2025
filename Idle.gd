@@ -1,7 +1,7 @@
 extends State
 
 func enter() -> void:
-	parent.animations.play("idle")  # Play idle animation
+	parent.animations.play("idle")  # strafe left and right
 
 func process_input(event: InputEvent) -> State:
 	if event.is_action_pressed("attack"):

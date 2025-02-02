@@ -6,3 +6,5 @@
 script = ExtResource("1_wwf3b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
