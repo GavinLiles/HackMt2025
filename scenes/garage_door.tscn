@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://cinmfyw4burt2"]
+
+[ext_resource type="Script" path="res://scripts/door.gd" id="1_pdvae"]
+[ext_resource type="Texture2D" uid="uid://dps5v4k1wg3h7" path="res://assets/garage.png" id="2_6wgvt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0frxd"]
+size = Vector2(365, 32)
+
+[sub_resource type="Animation" id="Animation_dwh8e"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_6erbr"]
+resource_name = "close"
+
+[sub_resource type="Animation" id="Animation_2bpuy"]
+resource_name = "door_cw"
+
+[sub_resource type="Animation" id="Animation_ovmc2"]
+resource_name = "door_cw_breach"
+length = 0.5
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fukdi"]
+_data = {
+"RESET": SubResource("Animation_dwh8e"),
+"close": SubResource("Animation_6erbr"),
+"door_cw": SubResource("Animation_2bpuy"),
+"door_cw_breach": SubResource("Animation_ovmc2")
+}
+
+[node name="garage_door" type="Node2D"]
+script = ExtResource("1_pdvae")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(69, -6)
+collision_layer = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-69, 5)
+scale = Vector2(1, 0.382353)
+texture = ExtResource("2_6wgvt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-69.5, 5)
+shape = SubResource("RectangleShape2D_0frxd")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fukdi")
+}
