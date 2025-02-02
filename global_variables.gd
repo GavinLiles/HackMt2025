@@ -14,11 +14,13 @@ enum {
 }
 
 #struct for holding room data
-#class room:
-	#var timer: int = 0
-	#var op_count = 0
-	#var terrorist_count = 0
+class room:
+	var timer: int = 0
+	var op_count = 0
+	var t_count = 0
 	
+@onready var rooms = [room, room, room, room, room, room]
+
 #Blackboard Functions (static values)
 func calcDistanceScore (distanceFromTarget, desiredFiringRange):
 	var distanceDelta = distanceFromTarget - desiredFiringRange
@@ -54,10 +56,6 @@ var desired_firing_range = 5
 var terrorist_count = 14
 var operator_count = 4
 
-#var rooms: room = []
-
-#for i in range(6):
-	#rooms[i] = room.new()
 
 func _process(delta):
 	#UBAI functions
