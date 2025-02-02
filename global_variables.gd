@@ -28,22 +28,22 @@ func calcAmmoRatio (currentAmmo, maxAmmo):
 	return ammoRatio
 	
 
-var line_of_sight
-var dist_from_target
+var line_of_sight = false
+var dist_from_target = 0
 
-var distance_score
-var health_ratio
-var ammo_ratio
+var distance_score: float = 0
+var health_ratio: float = 0
+var ammo_ratio: float = 0
 
-var curr_health
-var max_health
-var curr_ammo
-var max_ammo
-var has_special
-var desired_firing_range
+var curr_health = 100
+var max_health = 100
+var curr_ammo = 100
+var max_ammo = 100
+var has_special = false
+var desired_firing_range = 5
 
-var terrorist_count
-var operator_count
+var terrorist_count = 14
+var operator_count = 4
 
 var room_timers = [0,0,0,0,0,0]
 
