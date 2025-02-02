@@ -1,0 +1,803 @@
+[gd_scene load_steps=6 format=3 uid="uid://coq7piffjmcu4"]
+
+[ext_resource type="Script" path="res://Scripts/operatorSelection_box_container.gd" id="1_fedwp"]
+[ext_resource type="Texture2D" uid="uid://c4ji480o3tgd2" path="res://Assets/Backgrounds/Brickwall.jpg" id="1_o0b0w"]
+[ext_resource type="Texture2D" uid="uid://dmf6pri4ad0ga" path="res://Assets/Backgrounds/BigCork.png" id="2_erhpi"]
+[ext_resource type="Texture2D" uid="uid://cetysdk6y8dgp" path="res://Assets/Weapons/assaultRifle.png" id="2_v1xe1"]
+[ext_resource type="Texture2D" uid="uid://cu8d8s6dxql6o" path="res://Assets/Backgrounds/scroll.png" id="3_r1phd"]
+
+[node name="Character_Selection" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.619025, 0.520001)
+size_flags_horizontal = 6
+size_flags_vertical = 3
+
+[node name="CharacterSelectionBackground1_TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1046.81
+offset_top = -736.537
+offset_right = -420.808
+offset_bottom = -110.537
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.39086, 2.46153)
+texture = ExtResource("1_o0b0w")
+
+[node name="CharacterSelectionBackground2_TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -847.0
+offset_top = -1042.0
+offset_right = 847.0
+offset_bottom = 1042.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_erhpi")
+expand_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -587.0
+offset_bottom = 587.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Back" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 51
+text = "Back"
+expand_icon = true
+
+[node name="Op_VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_constants/separation = -50
+
+[node name="OpTopRow_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(1000, 500)
+layout_mode = 2
+theme_override_constants/separation = -10
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Op_CenterContainer" type="CenterContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer"]
+layout_mode = 2
+
+[node name="OpBackground_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer"]
+layout_mode = 2
+texture = ExtResource("3_r1phd")
+
+[node name="Op_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer"]
+custom_minimum_size = Vector2(100, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_fedwp")
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Op_OptionButton" type="OptionButton" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -158.0
+offset_top = -27.0
+offset_right = 158.0
+offset_bottom = 19.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Op_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239
+anchor_top = 0.107
+anchor_right = 1.258
+anchor_bottom = 1.0
+offset_left = 30.8
+offset_top = -1.4
+offset_right = -74.6
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.24, 1.24)
+expand_mode = 3
+
+[node name="numOfBreaches_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Number of Breaches: 0"
+
+[node name="Weapon_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="WeaponStats_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Weapon_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "-Assault Rifle-"
+
+[node name="Weapon_Stats_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Weapon_Damage_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Damage : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_FireRate_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Fire Rate : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_Accuracy_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Accuracy : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_Noise_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Noise : 50
+"
+horizontal_alignment = 2
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="Weapon_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -138.5
+offset_right = 165.0
+offset_bottom = 92.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_v1xe1")
+expand_mode = 5
+
+[node name="Health_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Health_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Health_TextureProgressBar" type="TextureProgressBar" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Health_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_top = 2.0
+offset_right = 421.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.68, 1)
+max_value = 150.0
+value = 150.0
+
+[node name="Health_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Health_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Health: 150
+"
+uppercase = true
+
+[node name="Arms_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Arms_HBoxContainer"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Arms_TextureProgressBar" type="TextureProgressBar" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Arms_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.05
+anchor_bottom = 1.0
+offset_left = -101.0
+offset_right = 456.0
+offset_bottom = 2.0
+grow_vertical = 2
+scale = Vector2(0.68, 1)
+max_value = 150.0
+value = 150.0
+
+[node name="Arms_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Arms_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ARMS STRENGTH: 100"
+
+[node name="Op_CenterContainer2" type="CenterContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer"]
+layout_mode = 2
+
+[node name="OpBackground_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2"]
+layout_mode = 2
+texture = ExtResource("3_r1phd")
+
+[node name="Op_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2"]
+custom_minimum_size = Vector2(100, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_fedwp")
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Op_OptionButton" type="OptionButton" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -158.0
+offset_top = -27.0
+offset_right = 158.0
+offset_bottom = 19.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Op_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239
+anchor_top = 0.107
+anchor_right = 1.258
+anchor_bottom = 1.0
+offset_left = 30.8
+offset_top = -1.4
+offset_right = -74.6
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.24, 1.24)
+expand_mode = 3
+
+[node name="numOfBreaches_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Number of Breaches: 0"
+
+[node name="Weapon_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="WeaponStats_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Weapon_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "-Assault Rifle-"
+
+[node name="Weapon_Stats_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Weapon_Damage_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Damage : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_FireRate_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Fire Rate : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_Accuracy_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Accuracy : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_Noise_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Noise : 50
+"
+horizontal_alignment = 2
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="Weapon_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -138.5
+offset_right = 165.0
+offset_bottom = 92.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_v1xe1")
+expand_mode = 5
+
+[node name="Health_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Health_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Health_TextureProgressBar" type="TextureProgressBar" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Health_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_top = 2.0
+offset_right = 421.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.68, 1)
+max_value = 150.0
+value = 150.0
+
+[node name="Health_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Health_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Health: 150
+"
+uppercase = true
+
+[node name="Arms_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Arms_HBoxContainer"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Arms_TextureProgressBar" type="TextureProgressBar" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Arms_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.05
+anchor_bottom = 1.0
+offset_left = -101.0
+offset_right = 456.0
+offset_bottom = 2.0
+grow_vertical = 2
+scale = Vector2(0.68, 1)
+max_value = 150.0
+value = 150.0
+
+[node name="Arms_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Arms_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ARMS STRENGTH: 100"
+
+[node name="OpBottomRow_HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(1000, 500)
+layout_mode = 2
+theme_override_constants/separation = -30
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Op_CenterContainer" type="CenterContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2"]
+layout_mode = 2
+
+[node name="OpBackground_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer"]
+layout_mode = 2
+texture = ExtResource("3_r1phd")
+
+[node name="Op_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer"]
+custom_minimum_size = Vector2(100, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_fedwp")
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Op_OptionButton" type="OptionButton" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -158.0
+offset_top = -27.0
+offset_right = 158.0
+offset_bottom = 19.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Op_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239
+anchor_top = 0.107
+anchor_right = 1.258
+anchor_bottom = 1.0
+offset_left = 30.8
+offset_top = -1.4
+offset_right = -74.6
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.24, 1.24)
+expand_mode = 3
+
+[node name="numOfBreaches_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Number of Breaches: 0"
+
+[node name="Weapon_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="WeaponStats_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Weapon_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "-Assault Rifle-"
+
+[node name="Weapon_Stats_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Weapon_Damage_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Damage : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_FireRate_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Fire Rate : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_Accuracy_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Accuracy : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_Noise_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Noise : 50
+"
+horizontal_alignment = 2
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="Weapon_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Weapon_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -138.5
+offset_right = 165.0
+offset_bottom = 92.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_v1xe1")
+expand_mode = 5
+
+[node name="Health_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Health_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Health_TextureProgressBar" type="TextureProgressBar" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Health_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_top = 2.0
+offset_right = 421.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.68, 1)
+max_value = 150.0
+value = 150.0
+
+[node name="Health_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Health_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Health: 150
+"
+uppercase = true
+
+[node name="Arms_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Arms_HBoxContainer"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Arms_TextureProgressBar" type="TextureProgressBar" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Arms_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.05
+anchor_bottom = 1.0
+offset_left = -101.0
+offset_right = 456.0
+offset_bottom = 2.0
+grow_vertical = 2
+scale = Vector2(0.68, 1)
+max_value = 150.0
+value = 150.0
+
+[node name="Arms_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Arms_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ARMS STRENGTH: 100"
+
+[node name="Op_CenterContainer2" type="CenterContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2"]
+layout_mode = 2
+
+[node name="OpBackground_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2"]
+layout_mode = 2
+texture = ExtResource("3_r1phd")
+
+[node name="Op_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2"]
+custom_minimum_size = Vector2(100, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_fedwp")
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Op_OptionButton" type="OptionButton" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -158.0
+offset_top = -27.0
+offset_right = 158.0
+offset_bottom = 19.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Op_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239
+anchor_top = 0.107
+anchor_right = 1.258
+anchor_bottom = 1.0
+offset_left = 30.8
+offset_top = -1.4
+offset_right = -74.6
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.24, 1.24)
+expand_mode = 3
+
+[node name="numOfBreaches_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Number of Breaches: 0"
+
+[node name="Weapon_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="WeaponStats_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Weapon_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "-Assault Rifle-"
+
+[node name="Weapon_Stats_VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Weapon_Damage_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Damage : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_FireRate_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Fire Rate : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_Accuracy_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Accuracy : 50"
+horizontal_alignment = 2
+
+[node name="Weapon_Noise_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/WeaponStats_VBoxContainer/Weapon_Stats_VBoxContainer"]
+layout_mode = 2
+text = "Noise : 50
+"
+horizontal_alignment = 2
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="Weapon_TextureRect" type="TextureRect" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Weapon_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -138.5
+offset_right = 165.0
+offset_bottom = 92.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_v1xe1")
+expand_mode = 5
+
+[node name="Health_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Health_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Health_TextureProgressBar" type="TextureProgressBar" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Health_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_top = 2.0
+offset_right = 421.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.68, 1)
+max_value = 150.0
+value = 150.0
+
+[node name="Health_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Health_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Health: 150
+"
+uppercase = true
+
+[node name="Arms_HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Arms_HBoxContainer"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Arms_TextureProgressBar" type="TextureProgressBar" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Arms_HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.05
+anchor_bottom = 1.0
+offset_left = -101.0
+offset_right = 456.0
+offset_bottom = 2.0
+grow_vertical = 2
+scale = Vector2(0.68, 1)
+max_value = 150.0
+value = 150.0
+
+[node name="Arms_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Arms_HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ARMS STRENGTH: 100"
+
+[node name="Next" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 51
+text = "Next"
+alignment = 2
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="item_selected" from="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Control/Op_OptionButton" to="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer" method="_on_op_option_button_item_selected"]
+[connection signal="item_selected" from="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Control/Op_OptionButton" to="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer" method="_on_op_option_button_item_selected"]
+[connection signal="item_selected" from="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Control/Op_OptionButton" to="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer" method="_on_op_option_button_item_selected"]
+[connection signal="item_selected" from="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Control/Op_OptionButton" to="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer" method="_on_op_option_button_item_selected"]
