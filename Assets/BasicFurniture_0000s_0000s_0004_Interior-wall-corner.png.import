@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b255juil8e507"
-path="res://.godot/imported/BasicFurniture_0000s_0000s_0004_Interior-wall-corner.png-52e47839c0b8a54a7519a5f5e61a186d.ctex"
+path="res://.godot/imported/BasicFurniture_0000s_0000s_0004_Interior-wall-corner.png-676ccc68dc975e51e1222c335fb75c89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level_1_proto/assets/BasicFurniture_0000s_0000s_0004_Interior-wall-corner.png"
-dest_files=["res://.godot/imported/BasicFurniture_0000s_0000s_0004_Interior-wall-corner.png-52e47839c0b8a54a7519a5f5e61a186d.ctex"]
+source_file="res://Assets/BasicFurniture_0000s_0000s_0004_Interior-wall-corner.png"
+dest_files=["res://.godot/imported/BasicFurniture_0000s_0000s_0004_Interior-wall-corner.png-676ccc68dc975e51e1222c335fb75c89.ctex"]
 
 [params]
 

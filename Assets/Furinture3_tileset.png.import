@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ilf5wy0s7fda"
-path="res://.godot/imported/Furinture3_tileset.png-6cf4a5e3272cb1d7710dc38574de62df.ctex"
+path="res://.godot/imported/Furinture3_tileset.png-fc3f546f58d1d4d97670bf72208e041b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level_1_proto/assets/Furinture3_tileset.png"
-dest_files=["res://.godot/imported/Furinture3_tileset.png-6cf4a5e3272cb1d7710dc38574de62df.ctex"]
+source_file="res://Assets/Furinture3_tileset.png"
+dest_files=["res://.godot/imported/Furinture3_tileset.png-fc3f546f58d1d4d97670bf72208e041b.ctex"]
 
 [params]
 
