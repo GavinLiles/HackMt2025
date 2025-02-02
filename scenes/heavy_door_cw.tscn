@@ -1,7 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bhpwj7cep8lcb"]
+[gd_scene load_steps=12 format=3 uid="uid://bhpwj7cep8lcb"]
 
-[ext_resource type="Script" path="res://scripts/door.gd" id="1_66w43"]
+[ext_resource type="Script" path="res://scripts/heavy_door.gd" id="1_66w43"]
 [ext_resource type="Texture2D" uid="uid://csnoyoura61eg" path="res://assets/cw_exterior_door.png" id="2_qlpdx"]
+[ext_resource type="AudioStream" uid="uid://8rxyg2sec4r1" path="res://assets/Audio/door_open.mp3" id="3_b0vju"]
+[ext_resource type="AudioStream" uid="uid://de788ehlletqg" path="res://assets/Audio/door_close.mp3" id="4_w03wf"]
+[ext_resource type="AudioStream" uid="uid://ysl2a70y7v4q" path="res://assets/Audio/door_break.mp3" id="5_wns0n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0frxd"]
 size = Vector2(64, 16)
@@ -53,7 +56,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_6erbr"]
-resource_name = "new_animation"
+resource_name = "close_door"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -70,9 +73,9 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fukdi"]
 _data = {
 "RESET": SubResource("Animation_dwh8e"),
+"close_door": SubResource("Animation_6erbr"),
 "door_cw": SubResource("Animation_2bpuy"),
-"door_cw_breach": SubResource("Animation_ovmc2"),
-"new_animation": SubResource("Animation_6erbr")
+"door_cw_breach": SubResource("Animation_ovmc2")
 }
 
 [node name="heavy_door_cw" type="Node2D"]
@@ -94,3 +97,12 @@ shape = SubResource("RectangleShape2D_0frxd")
 libraries = {
 "": SubResource("AnimationLibrary_fukdi")
 }
+
+[node name="Open_Audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_b0vju")
+
+[node name="Close_Audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_w03wf")
+
+[node name="Break_Audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_wns0n")

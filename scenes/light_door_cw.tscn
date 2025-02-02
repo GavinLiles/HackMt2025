@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://b5ggtkd5fp2bp"]
 
-[ext_resource type="Script" path="res://scripts/door.gd" id="1_4lw4m"]
+[ext_resource type="Script" path="res://scripts/light_door.gd" id="1_h7ij8"]
 [ext_resource type="Texture2D" uid="uid://dmo1ndfyavc6p" path="res://assets/cw_interior_door.png" id="2_jdond"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0frxd"]
@@ -76,7 +76,7 @@ _data = {
 }
 
 [node name="light_door_cw" type="Node2D"]
-script = ExtResource("1_4lw4m")
+script = ExtResource("1_h7ij8")
 
 [node name="Hinge" type="Node2D" parent="."]
 

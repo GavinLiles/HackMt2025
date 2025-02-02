@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdwkjict7bk0h"
-path="res://.godot/imported/survivor-idle_shotgun_0.png-8ef87d963d0e946fd626047051086831.ctex"
+path="res://.godot/imported/survivor-idle_shotgun_0.png-db5731ab8a32d2b030ee76435937bddc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/survivor-idle_shotgun_0.png"
-dest_files=["res://.godot/imported/survivor-idle_shotgun_0.png-8ef87d963d0e946fd626047051086831.ctex"]
+source_file="res://Assets/survivor-idle_shotgun_0.png"
+dest_files=["res://.godot/imported/survivor-idle_shotgun_0.png-db5731ab8a32d2b030ee76435937bddc.ctex"]
 
 [params]
 
