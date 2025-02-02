@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://c3kgwsgsauiw4"]
 
-[ext_resource type="PackedScene" path="res://scene/Main_Menu_BGM.tscn" id="1_kdhx4"]
+[ext_resource type="PackedScene" uid="uid://byvg731xmpje" path="res://scene/Main_Menu_BGM.tscn" id="1_kdhx4"]
 [ext_resource type="Script" path="res://scene/Transition.gd" id="1_v6gn5"]
 [ext_resource type="Shader" path="res://Scripts/Scroll.gdshader" id="2_cujic"]
 [ext_resource type="Shader" path="res://Scripts/Scoll2.gdshader" id="2_qld2n"]

@@ -1,34 +1,38 @@
-[gd_scene load_steps=8 format=3 uid="uid://coq7piffjmcu4"]
+[gd_scene load_steps=6 format=3 uid="uid://coq7piffjmcu4"]
 
-[ext_resource type="Texture2D" uid="uid://dewecmpidyxi6" path="res://Assets/Characters/Screenshot 2025-02-01 at 12.41.25 AM.png" id="1_b2oej"]
 [ext_resource type="Script" path="res://Scripts/operatorSelection_box_container.gd" id="1_fedwp"]
 [ext_resource type="Texture2D" uid="uid://c4ji480o3tgd2" path="res://Assets/Backgrounds/Brickwall.jpg" id="1_o0b0w"]
 [ext_resource type="Texture2D" uid="uid://dmf6pri4ad0ga" path="res://Assets/Backgrounds/BigCork.png" id="2_erhpi"]
 [ext_resource type="Texture2D" uid="uid://cetysdk6y8dgp" path="res://Assets/Weapons/assaultRifle.png" id="2_v1xe1"]
-[ext_resource type="Texture2D" uid="uid://wq5qurduxmso" path="res://Assets/Characters/Extra/ProgressBar.png" id="2_yc2w4"]
 [ext_resource type="Texture2D" uid="uid://cu8d8s6dxql6o" path="res://Assets/Backgrounds/scroll.png" id="3_r1phd"]
 
 [node name="Character_Selection" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.619025, 0.520001)
 size_flags_horizontal = 6
 size_flags_vertical = 3
 
 [node name="CharacterSelectionBackground1_TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -136.0
-offset_top = -94.0
-offset_right = 168.0
-offset_bottom = 75.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1046.81
+offset_top = -736.537
+offset_right = -420.808
+offset_bottom = -110.537
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(3.39086, 2.46153)
 texture = ExtResource("1_o0b0w")
 
 [node name="CharacterSelectionBackground2_TextureRect" type="TextureRect" parent="."]
@@ -125,7 +129,6 @@ offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.24, 1.24)
-texture = ExtResource("1_b2oej")
 expand_mode = 3
 
 [node name="numOfBreaches_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer"]
@@ -217,7 +220,6 @@ grow_vertical = 2
 scale = Vector2(0.68, 1)
 max_value = 150.0
 value = 150.0
-texture_progress = ExtResource("2_yc2w4")
 
 [node name="Health_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Health_HBoxContainer"]
 layout_mode = 2
@@ -249,7 +251,6 @@ grow_vertical = 2
 scale = Vector2(0.68, 1)
 max_value = 150.0
 value = 150.0
-texture_progress = ExtResource("2_yc2w4")
 
 [node name="Arms_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer/Op_VBoxContainer/Arms_HBoxContainer"]
 layout_mode = 2
@@ -303,7 +304,6 @@ offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.24, 1.24)
-texture = ExtResource("1_b2oej")
 expand_mode = 3
 
 [node name="numOfBreaches_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer"]
@@ -395,7 +395,6 @@ grow_vertical = 2
 scale = Vector2(0.68, 1)
 max_value = 150.0
 value = 150.0
-texture_progress = ExtResource("2_yc2w4")
 
 [node name="Health_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Health_HBoxContainer"]
 layout_mode = 2
@@ -427,7 +426,6 @@ grow_vertical = 2
 scale = Vector2(0.68, 1)
 max_value = 150.0
 value = 150.0
-texture_progress = ExtResource("2_yc2w4")
 
 [node name="Arms_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpTopRow_HBoxContainer/Op_CenterContainer2/Op_VBoxContainer/Arms_HBoxContainer"]
 layout_mode = 2
@@ -488,7 +486,6 @@ offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.24, 1.24)
-texture = ExtResource("1_b2oej")
 expand_mode = 3
 
 [node name="numOfBreaches_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer"]
@@ -580,7 +577,6 @@ grow_vertical = 2
 scale = Vector2(0.68, 1)
 max_value = 150.0
 value = 150.0
-texture_progress = ExtResource("2_yc2w4")
 
 [node name="Health_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Health_HBoxContainer"]
 layout_mode = 2
@@ -612,7 +608,6 @@ grow_vertical = 2
 scale = Vector2(0.68, 1)
 max_value = 150.0
 value = 150.0
-texture_progress = ExtResource("2_yc2w4")
 
 [node name="Arms_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer/Op_VBoxContainer/Arms_HBoxContainer"]
 layout_mode = 2
@@ -666,7 +661,6 @@ offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.24, 1.24)
-texture = ExtResource("1_b2oej")
 expand_mode = 3
 
 [node name="numOfBreaches_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer"]
@@ -758,7 +752,6 @@ grow_vertical = 2
 scale = Vector2(0.68, 1)
 max_value = 150.0
 value = 150.0
-texture_progress = ExtResource("2_yc2w4")
 
 [node name="Health_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Health_HBoxContainer"]
 layout_mode = 2
@@ -790,7 +783,6 @@ grow_vertical = 2
 scale = Vector2(0.68, 1)
 max_value = 150.0
 value = 150.0
-texture_progress = ExtResource("2_yc2w4")
 
 [node name="Arms_Label" type="Label" parent="HBoxContainer/Op_VBoxContainer/OpBottomRow_HBoxContainer2/Op_CenterContainer2/Op_VBoxContainer/Arms_HBoxContainer"]
 layout_mode = 2
