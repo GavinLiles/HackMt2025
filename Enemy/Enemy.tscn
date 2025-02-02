@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ca8fpgdgnkkp2"]
+[gd_scene load_steps=3 format=3 uid="uid://ca8fpgdgnkkp2"]
 
 [ext_resource type="Script" path="res://Enemy/enemy.gd" id="1_wwf3b"]
+[ext_resource type="Texture2D" uid="uid://dpb4rknlkc5xy" path="res://icon.svg" id="2_wjrwj"]
 
 [node name="Enemy" type="CharacterBody2D"]
 script = ExtResource("1_wwf3b")
@@ -8,3 +9,6 @@ script = ExtResource("1_wwf3b")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_wjrwj")
+region_enabled = true
+region_rect = Rect2(768, 451, 350, 228)

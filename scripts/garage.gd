@@ -2,8 +2,8 @@ extends Area2D
 
 var friendly_count = 0
 var enemy_count = 0
-Global.GARAGE
-Global.room_timers[GARAGE]
+#Global.GARAGE
+#Global.room_timers[GARAGE]
 var timing = false
 
 func _physics_process(delta):
@@ -29,9 +29,9 @@ func _process(delta: float) -> void:
 		timing = true
 
 func _on_timer_timeout() -> void:
-	Global.room_timers[GARAGE] += 1
+	#Global.room_timers[GARAGE] += 1
 	if friendly_count > -1 and enemy_count > -1:
 		$Timer.start()
 	else:
 		timing = false
-		Global.room_timers[GARAGE] = 0
+		#Global.room_timers[GARAGE] = 0

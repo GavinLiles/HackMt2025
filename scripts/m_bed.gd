@@ -2,8 +2,8 @@ extends Area2D
 
 var friendly_count = 0
 var enemy_count = 0
-Global.MASTER_BEDROOM
-Global.room_timers[MASTER_BEDROOM]
+#Global.MASTER_BEDROOM
+#Global.room_timers[MASTER_BEDROOM]
 var timing = false
 
 func _physics_process(delta):
@@ -29,9 +29,9 @@ func _process(delta: float) -> void:
 		timing = true
 
 func _on_timer_timeout() -> void:
-	Global.room_timers[MASTER_BEDROOM] += 1
+	#Global.room_timers[MASTER_BEDROOM] += 1
 	if friendly_count > 0 and enemy_count > 0:
 		$Timer.start()
 	else:
 		timing = false
-		Global.room_timers[MASTER_BEDROOM] = 0
+		#Global.room_timers[MASTER_BEDROOM] = 0
