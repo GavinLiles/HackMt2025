@@ -21,7 +21,9 @@ var signal_in
 var str = 0
 
 func _process(delta: float) -> void:
+	
 	if bt == 0:
+		_open()
 		pass
 	elif bt == 1:
 		pass
@@ -37,6 +39,7 @@ func _ready() -> void:
 		sp += 10
 	else:
 		locked = false
+	bt = 0
 
 func _open():
 	#check if door unlocked

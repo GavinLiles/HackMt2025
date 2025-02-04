@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://bhpwj7cep8lcb"]
+[gd_scene load_steps=13 format=3 uid="uid://bhpwj7cep8lcb"]
 
 [ext_resource type="Script" path="res://scripts/heavy_door.gd" id="1_66w43"]
-[ext_resource type="Texture2D" uid="uid://csnoyoura61eg" path="res://assets/cw_exterior_door.png" id="2_qlpdx"]
-[ext_resource type="AudioStream" uid="uid://8rxyg2sec4r1" path="res://assets/Audio/door_open.mp3" id="3_b0vju"]
-[ext_resource type="AudioStream" uid="uid://de788ehlletqg" path="res://assets/Audio/door_close.mp3" id="4_w03wf"]
-[ext_resource type="AudioStream" uid="uid://ysl2a70y7v4q" path="res://assets/Audio/door_break.mp3" id="5_wns0n"]
+[ext_resource type="PackedScene" uid="uid://cibod835abrtu" path="res://Breach_menu.tscn" id="2_hw1mb"]
+[ext_resource type="Texture2D" uid="uid://csnoyoura61eg" path="res://Assets/cw_exterior_door.png" id="2_qlpdx"]
+[ext_resource type="AudioStream" uid="uid://8rxyg2sec4r1" path="res://Assets/Audio/door_open.mp3" id="3_b0vju"]
+[ext_resource type="AudioStream" uid="uid://de788ehlletqg" path="res://Assets/Audio/door_close.mp3" id="4_w03wf"]
+[ext_resource type="AudioStream" uid="uid://ysl2a70y7v4q" path="res://Assets/Audio/door_break.mp3" id="5_wns0n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0frxd"]
 size = Vector2(64, 16)
@@ -22,6 +23,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_6erbr"]
+resource_name = "close_door"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hinge:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.5708, 0.0]
 }
 
 [sub_resource type="Animation" id="Animation_2bpuy"]
@@ -55,21 +71,6 @@ tracks/0/keys = {
 "values": [0.0, 1.5708, 1.309, 1.5708]
 }
 
-[sub_resource type="Animation" id="Animation_6erbr"]
-resource_name = "close_door"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Hinge:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [1.5708, 0.0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fukdi"]
 _data = {
 "RESET": SubResource("Animation_dwh8e"),
@@ -80,6 +81,15 @@ _data = {
 
 [node name="heavy_door_cw" type="Node2D"]
 script = ExtResource("1_66w43")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(8.0303, -2)
+
+[node name="BreachMenu" parent="." instance=ExtResource("2_hw1mb")]
+visible = false
 
 [node name="Hinge" type="Node2D" parent="."]
 
@@ -106,3 +116,5 @@ stream = ExtResource("4_w03wf")
 
 [node name="Break_Audio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_wns0n")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

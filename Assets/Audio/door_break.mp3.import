@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://ysl2a70y7v4q"
-path="res://.godot/imported/door_break.mp3-dad6c50b6d6e3813747b3bce60ecbaa5.mp3str"
+path="res://.godot/imported/door_break.mp3-c81ff105584ba9bc628e7a5252a8d0ee.mp3str"
 
 [deps]
 
-source_file="res://assets/Audio/door_break.mp3"
-dest_files=["res://.godot/imported/door_break.mp3-dad6c50b6d6e3813747b3bce60ecbaa5.mp3str"]
+source_file="res://Assets/Audio/door_break.mp3"
+dest_files=["res://.godot/imported/door_break.mp3-c81ff105584ba9bc628e7a5252a8d0ee.mp3str"]
 
 [params]
 

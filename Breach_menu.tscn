@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://cibod835abrtu"]
+
+[ext_resource type="Script" path="res://breach_menu.gd" id="1_5i5el"]
+
+[node name="MarginContainer" type="MarginContainer"]
+offset_right = 348.0
+offset_bottom = 311.0
+script = ExtResource("1_5i5el")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 2
+
+[node name="backing" type="ColorRect" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="DAS_INFO" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DAS_INFO"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="DAS_INFO/VBoxContainer"]
+layout_mode = 2
+text = "Breach Options"
+horizontal_alignment = 1
+
+[node name="Open" type="Button" parent="DAS_INFO/VBoxContainer"]
+layout_mode = 2
+text = "Open Door"
+
+[node name="Close" type="Button" parent="DAS_INFO/VBoxContainer"]
+layout_mode = 2
+text = "Close Door"
+
+[node name="SoftBreach" type="Button" parent="DAS_INFO/VBoxContainer"]
+layout_mode = 2
+text = "Soft Breach"
+
+[node name="HardBreach" type="Button" parent="DAS_INFO/VBoxContainer"]
+layout_mode = 2
+text = "Hard Breach"
+
+[connection signal="pressed" from="DAS_INFO/VBoxContainer/Open" to="." method="_on_open_pressed"]
+[connection signal="pressed" from="DAS_INFO/VBoxContainer/Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="DAS_INFO/VBoxContainer/SoftBreach" to="." method="_on_soft_breach_pressed"]
+[connection signal="pressed" from="DAS_INFO/VBoxContainer/HardBreach" to="." method="_on_hard_breach_pressed"]

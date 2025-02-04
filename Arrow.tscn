@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://gcr6qke7bygn"]
+
+[ext_resource type="Script" path="res://arrow.gd" id="1_vv16r"]
+
+[node name="arrow" type="Line2D"]
+points = PackedVector2Array(-6, -8)
+default_color = Color(0.723695, 0.170367, 0.182743, 1)
+script = ExtResource("1_vv16r")

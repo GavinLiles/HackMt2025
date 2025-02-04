@@ -10,9 +10,11 @@ var opened = false
 var breached = false
 var locked
 
+var breach_menu_open = false
+
 var lock_side = "cw"
 var open_direction = "cw"
-var bs
+var bs = 5
 var bt
 
 #TEMP
@@ -117,3 +119,20 @@ func _charge_breach():
 func _signal():
 	bs = signal_in
 	bt = signal_in
+
+func _on_button_pressed() -> void:
+	#if breach_menu_open == false:
+		## open menu
+		#$BreachMenu.visible = true
+		#$BreachMenu.z_index = 5
+		#breach_menu_open = true
+	#else:
+		## close menu
+		#$BreachMenu.visible = false
+		#breach_menu_open = false
+	bt = 0
+	pass # Replace with function body.
+
+func _on_breach_menu_bt_score(num: Variant) -> void:
+	bt = num
+	print(bt)

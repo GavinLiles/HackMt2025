@@ -1,0 +1,124 @@
+[gd_scene load_steps=4 format=3 uid="uid://c742rc3i3df7s"]
+
+[ext_resource type="Texture2D" uid="uid://mnf53g2as8f" path="res://Art/100_body.png" id="1_8xlf1"]
+[ext_resource type="Script" path="res://player_menu.gd" id="1_l2w1p"]
+[ext_resource type="Texture2D" uid="uid://bi55qytv76p6j" path="res://Art/menu_background_small.png" id="2_xqh5p"]
+
+[node name="PlayerMenu" type="MarginContainer"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 545.0
+offset_bottom = 1003.0
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_l2w1p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_xqh5p")
+
+[node name="Background" type="ColorRect" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Break0" type="ColorRect" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Player Name "
+horizontal_alignment = 1
+
+[node name="Break1" type="ColorRect" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="PlayerHealth" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_8xlf1")
+
+[node name="Break2" type="ColorRect" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Attribute1" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Ammo" type="Label" parent="MarginContainer/VBoxContainer/Attribute1"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Ammo:"
+
+[node name="Value" type="Label" parent="MarginContainer/VBoxContainer/Attribute1"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 30
+text = "value
+"
+
+[node name="Attribute2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="BreachTool" type="Label" parent="MarginContainer/VBoxContainer/Attribute2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Breach Tool:"
+
+[node name="Value" type="Label" parent="MarginContainer/VBoxContainer/Attribute2"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 30
+text = "value
+"
+
+[node name="Attribute3" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Grenades" type="Label" parent="MarginContainer/VBoxContainer/Attribute3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Grenades:"
+
+[node name="Value" type="Label" parent="MarginContainer/VBoxContainer/Attribute3"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 30
+text = "value
+"
+
+[node name="Attribute4" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Stamina" type="Label" parent="MarginContainer/VBoxContainer/Attribute4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Stamina:"
+
+[node name="Value" type="Label" parent="MarginContainer/VBoxContainer/Attribute4"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 30
+text = "value
+"
+
+[node name="Break3" type="ColorRect" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "REDUCE HEALTH"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

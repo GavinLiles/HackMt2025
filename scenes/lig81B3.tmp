@@ -1,8 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://csxbwn866ct0"]
+[gd_scene load_steps=9 format=3 uid="uid://b5ggtkd5fp2bp"]
 
-[ext_resource type="Script" path="res://scripts/heavy_door.gd" id="1_ewist"]
-[ext_resource type="Texture2D" uid="uid://c3ni714n78re2" path="res://Assets/cc_exterior_door.png" id="2_j7xhs"]
-[ext_resource type="PackedScene" uid="uid://cibod835abrtu" path="res://Breach_menu.tscn" id="2_v20wo"]
+[ext_resource type="Script" path="res://scripts/light_door.gd" id="1_h7ij8"]
+[ext_resource type="Texture2D" uid="uid://dmo1ndfyavc6p" path="res://Assets/cw_interior_door.png" id="2_jdond"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0frxd"]
 size = Vector2(64, 16)
@@ -22,21 +21,6 @@ tracks/0/keys = {
 "values": [0.0]
 }
 
-[sub_resource type="Animation" id="Animation_6erbr"]
-resource_name = "close"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Hinge:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [-1.5708, 0.0]
-}
-
 [sub_resource type="Animation" id="Animation_2bpuy"]
 resource_name = "door_cw"
 tracks/0/type = "value"
@@ -49,7 +33,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, -1.5708]
+"values": [0.0, 1.5708]
 }
 
 [sub_resource type="Animation" id="Animation_ovmc2"]
@@ -65,43 +49,53 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.3, 0.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0.0, -1.5708, -1.309, -1.5708]
+"values": [0.0, 1.5708, 1.309, 1.5708]
+}
+
+[sub_resource type="Animation" id="Animation_6erbr"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Hinge:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.5708, 0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fukdi"]
 _data = {
 "RESET": SubResource("Animation_dwh8e"),
-"close": SubResource("Animation_6erbr"),
 "door_cw": SubResource("Animation_2bpuy"),
-"door_cw_breach": SubResource("Animation_ovmc2")
+"door_cw_breach": SubResource("Animation_ovmc2"),
+"new_animation": SubResource("Animation_6erbr")
 }
 
-[node name="heavy_door_cw" type="Node2D"]
-script = ExtResource("1_ewist")
+[node name="light_door_cw" type="Node2D"]
+script = ExtResource("1_h7ij8")
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
-offset_left = -62.0
-offset_top = -14.0
-offset_right = -54.0
-offset_bottom = -6.0
-scale = Vector2(7.12, 1.56)
-
-[node name="BreachMenu" parent="." instance=ExtResource("2_v20wo")]
-visible = false
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(8.01321, -1.98366)
 
 [node name="Hinge" type="Node2D" parent="."]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Hinge"]
-position = Vector2(32, -8)
+position = Vector2(69, -6)
 collision_layer = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Hinge/CharacterBody2D"]
-position = Vector2(-64, 0)
-texture = ExtResource("2_j7xhs")
+position = Vector2(-37, -2)
+texture = ExtResource("2_jdond")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hinge/CharacterBody2D"]
-position = Vector2(-64, 0)
+position = Vector2(-37, -2)
 shape = SubResource("RectangleShape2D_0frxd")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -110,4 +104,3 @@ libraries = {
 }
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="bt_score" from="BreachMenu" to="." method="_on_breach_menu_bt_score"]

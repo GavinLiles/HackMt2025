@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://cy6twswi46yq4"]
+
+[ext_resource type="Script" path="res://Character2Script.gd" id="1_nq66g"]
+[ext_resource type="PackedScene" uid="uid://b83xggyh0kio1" path="res://Bullet.tscn" id="2_di1h8"]
+[ext_resource type="Texture2D" uid="uid://cla3ge32jjp7j" path="res://survivor-idle_shotgun_0.png" id="3_v8htl"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="4_wbg0h"]
+
+[sub_resource type="GDScript" id="GDScript_cq0qc"]
+
+[node name="CharacterBody2D2" type="CharacterBody2D"]
+position = Vector2(46, 4)
+script = ExtResource("1_nq66g")
+bullet_scene = ExtResource("2_di1h8")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(4, -2)
+scale = Vector2(0.109375, 0.101563)
+texture = ExtResource("3_v8htl")
+script = ExtResource("4_wbg0h")
+
+[node name="GunMuzzle2" type="Marker2D" parent="."]
+position = Vector2(17.6719, 2.37895)
+
+[node name="VisionCone2D" type="Node2D" parent="."]
+position = Vector2(2, 2)
+script = SubResource("GDScript_cq0qc")

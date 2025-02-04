@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://b5ggtkd5fp2bp"]
+[gd_scene load_steps=10 format=3 uid="uid://b5ggtkd5fp2bp"]
 
 [ext_resource type="Script" path="res://scripts/light_door.gd" id="1_h7ij8"]
-[ext_resource type="Texture2D" uid="uid://dmo1ndfyavc6p" path="res://assets/cw_interior_door.png" id="2_jdond"]
+[ext_resource type="PackedScene" uid="uid://cibod835abrtu" path="res://Breach_menu.tscn" id="2_itv6d"]
+[ext_resource type="Texture2D" uid="uid://dmo1ndfyavc6p" path="res://Assets/cw_interior_door.png" id="2_jdond"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0frxd"]
 size = Vector2(64, 16)
@@ -78,6 +79,15 @@ _data = {
 [node name="light_door_cw" type="Node2D"]
 script = ExtResource("1_h7ij8")
 
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(8.01321, -1.98366)
+
+[node name="BreachMenu" parent="." instance=ExtResource("2_itv6d")]
+visible = false
+
 [node name="Hinge" type="Node2D" parent="."]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="Hinge"]
@@ -96,3 +106,5 @@ shape = SubResource("RectangleShape2D_0frxd")
 libraries = {
 "": SubResource("AnimationLibrary_fukdi")
 }
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

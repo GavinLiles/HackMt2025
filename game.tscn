@@ -1,0 +1,115 @@
+[gd_scene load_steps=4 format=3 uid="uid://op4t3qc20sl2"]
+
+[ext_resource type="PackedScene" path="res://Arrow.tscn" id="1_dg0op"]
+[ext_resource type="PackedScene" uid="uid://6qelsdwxudkc" path="res://Character1.tscn" id="2_11elq"]
+[ext_resource type="PackedScene" uid="uid://kf8tqdlm8c5t" path="res://addons/vision_cone_2d/vision_cone_2d_template.tscn" id="4_y13oe"]
+
+[node name="Characters" type="Node2D"]
+
+[node name="arrow" type="Line2D" parent="."]
+
+[node name="arrow1" parent="." instance=ExtResource("1_dg0op")]
+position = Vector2(-2, -2)
+points = PackedVector2Array(-24, -16)
+default_color = Color(0.274243, 0.313211, 0.887278, 1)
+script = null
+
+[node name="arrow2" parent="." instance=ExtResource("1_dg0op")]
+position = Vector2(-2, -2)
+points = PackedVector2Array(-24, -16)
+script = null
+
+[node name="arrow3" parent="." instance=ExtResource("1_dg0op")]
+visible = false
+position = Vector2(-2, -2)
+points = PackedVector2Array(-24, -16)
+default_color = Color(0.564163, 0.291627, 0.535181, 1)
+script = null
+
+[node name="arrow4" parent="." instance=ExtResource("1_dg0op")]
+position = Vector2(-2, -2)
+points = PackedVector2Array(-24, -16)
+default_color = Color(0.444788, 0.417256, 0.142168, 1)
+script = null
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_11elq")]
+unique_name_in_owner = true
+position = Vector2(-172, -153)
+metadata/_edit_group_ = true
+
+[node name="BulletTimer" type="Timer" parent="CharacterBody2D"]
+
+[node name="VisionCone2D2" parent="CharacterBody2D" instance=ExtResource("4_y13oe")]
+rotation = -1.5708
+angle_deg = 70
+max_distance = 100.0
+
+[node name="VisionConeArea" parent="CharacterBody2D/VisionCone2D2" index="1"]
+visible = false
+collision_layer = 2
+
+[node name="CharacterBody2D5" parent="." instance=ExtResource("2_11elq")]
+unique_name_in_owner = true
+position = Vector2(126, -133)
+metadata/_edit_group_ = true
+
+[node name="BulletTimer" type="Timer" parent="CharacterBody2D5"]
+
+[node name="VisionCone2D2" parent="CharacterBody2D5" instance=ExtResource("4_y13oe")]
+rotation = -1.5708
+angle_deg = 70
+max_distance = 100.0
+
+[node name="VisionConeArea" parent="CharacterBody2D5/VisionCone2D2" index="1"]
+visible = false
+collision_layer = 2
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("2_11elq")]
+unique_name_in_owner = true
+position = Vector2(131, 83)
+metadata/_edit_group_ = true
+
+[node name="BulletTimer" type="Timer" parent="CharacterBody2D2"]
+
+[node name="VisionCone2D2" parent="CharacterBody2D2" instance=ExtResource("4_y13oe")]
+rotation = -1.5708
+angle_deg = 70
+max_distance = 100.0
+
+[node name="VisionConeArea" parent="CharacterBody2D2/VisionCone2D2" index="1"]
+visible = false
+collision_layer = 2
+
+[node name="CharacterBody2D3" parent="." instance=ExtResource("2_11elq")]
+unique_name_in_owner = true
+position = Vector2(-166, 82)
+metadata/_edit_group_ = true
+
+[node name="BulletTimer" type="Timer" parent="CharacterBody2D3"]
+
+[node name="VisionCone2D2" parent="CharacterBody2D3" instance=ExtResource("4_y13oe")]
+rotation = -1.5708
+angle_deg = 70
+max_distance = 100.0
+
+[node name="VisionConeArea" parent="CharacterBody2D3/VisionCone2D2" index="1"]
+visible = false
+collision_layer = 2
+
+[connection signal="timeout" from="CharacterBody2D/BulletTimer" to="CharacterBody2D" method="_on_bullet_timer_timeout"]
+[connection signal="body_entered" from="CharacterBody2D/VisionCone2D2/VisionConeArea" to="CharacterBody2D" method="_on_vision_cone_area_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D/VisionCone2D2/VisionConeArea" to="CharacterBody2D" method="_on_vision_cone_area_body_exited"]
+[connection signal="timeout" from="CharacterBody2D5/BulletTimer" to="CharacterBody2D5" method="_on_bullet_timer_timeout"]
+[connection signal="body_entered" from="CharacterBody2D5/VisionCone2D2/VisionConeArea" to="CharacterBody2D5" method="_on_vision_cone_area_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D5/VisionCone2D2/VisionConeArea" to="CharacterBody2D5" method="_on_vision_cone_area_body_exited"]
+[connection signal="timeout" from="CharacterBody2D2/BulletTimer" to="CharacterBody2D2" method="_on_bullet_timer_timeout"]
+[connection signal="body_entered" from="CharacterBody2D2/VisionCone2D2/VisionConeArea" to="CharacterBody2D2" method="_on_vision_cone_area_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D2/VisionCone2D2/VisionConeArea" to="CharacterBody2D2" method="_on_vision_cone_area_body_exited"]
+[connection signal="timeout" from="CharacterBody2D3/BulletTimer" to="CharacterBody2D3" method="_on_bullet_timer_timeout"]
+[connection signal="body_entered" from="CharacterBody2D3/VisionCone2D2/VisionConeArea" to="CharacterBody2D3" method="_on_vision_cone_area_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D3/VisionCone2D2/VisionConeArea" to="CharacterBody2D3" method="_on_vision_cone_area_body_exited"]
+
+[editable path="CharacterBody2D/VisionCone2D2"]
+[editable path="CharacterBody2D5/VisionCone2D2"]
+[editable path="CharacterBody2D2/VisionCone2D2"]
+[editable path="CharacterBody2D3/VisionCone2D2"]

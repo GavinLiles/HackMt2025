@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds5f6u44w1dkm"
-path="res://.godot/imported/BasicFurniture_0000s_0002s_0000_╨íontainer-closed-cover.png-0654c3e4c5b5e8ee22d11e1900b4f046.ctex"
+uid="uid://cptjb58b56ipm"
+path="res://.godot/imported/icon.png-0aa5bba4af5a332d87a18103ccdae1a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/BasicFurniture_0000s_0002s_0000_╨íontainer-closed-cover.png"
-dest_files=["res://.godot/imported/BasicFurniture_0000s_0002s_0000_╨íontainer-closed-cover.png-0654c3e4c5b5e8ee22d11e1900b4f046.ctex"]
+source_file="res://addons/vision_cone_2d/icon.png"
+dest_files=["res://.godot/imported/icon.png-0aa5bba4af5a332d87a18103ccdae1a1.ctex"]
 
 [params]
 
